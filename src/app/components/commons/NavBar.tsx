@@ -17,21 +17,10 @@ import Image from "next/image";
 import Link from "next/link";
 import SimpleMenu from "./Dropdown"
 
-// interface Props {
-//   /**
-//    * Injected by the documentation to work in an iframe.
-//    * You won't need it on your project.
-//    */
-//   window?: () => Window;
-// }
-
-const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
 
 
-// export default function DrawerAppBar(props: Props) {
+const drawerWidth = 200;
 export default function DrawerAppBar() {
-  // const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -54,11 +43,10 @@ export default function DrawerAppBar() {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+       Rishta Pakistan
       </Typography>
       <Divider />
       <List>
-               {/* <ListItem><Link href={"/"} style={{color:"white",textDecoration:"none"}}>Home</Link></ListItem> */}
                <ListItem><Link href={"/Pages/Home"} style={{color:"black",textDecoration:"none"}}>Home</Link></ListItem>
                <ListItem><Link href={"/Pages/Search"} style={{color:"black",textDecoration:"none"}}>Search</Link></ListItem>
                <ListItem><Link href={"/Pages/Profile"} style={{color:"black",textDecoration:"none"}}>LatestProfile</Link></ListItem>
@@ -75,7 +63,7 @@ export default function DrawerAppBar() {
   return (
     <Box sx={{ display: "flex"}}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ bgcolor: bgColor ? "black" : "#9e9e9e",width:"100%"}} elevation={0}>
+      <AppBar component="nav" sx={{ bgcolor: bgColor ? "black" : "rgba(5%,5%,5%,.2)",width:"100%"}} elevation={0}>
         <Toolbar sx={{width:"100%" }}>
           <IconButton
             color="inherit"
@@ -98,14 +86,12 @@ export default function DrawerAppBar() {
             <Box>
               <Image
                 src="https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"
-                // style={{width:"150px",height:"150px" }}
                 width={200}
                 height={50}
                 alt="logoImg"
               />
             </Box>
-            <List sx={{ display: { xs: "none", sm: "block",md:"flex"} }}>
-               {/* <ListItem><Link href={"/"} style={{color:"white",textDecoration:"none"}}>Home</Link></ListItem> */}
+            <List sx={{ display: { xs: "none", sm: "none",md:"flex"} }}>
                <ListItem><Link href={"/Pages/Home"} style={{color:"white",textDecoration:"none"}}>Home</Link></ListItem>
                <ListItem><Link href={"/Pages/Search"} style={{color:"white",textDecoration:"none"}}>Search</Link></ListItem>
                <ListItem><Link href={"/Pages/Profile"} style={{color:"white",textDecoration:"none"}}>LatestProfile</Link></ListItem>

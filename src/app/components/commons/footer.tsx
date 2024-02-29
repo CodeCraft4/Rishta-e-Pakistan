@@ -19,7 +19,7 @@ const Footer = () => {
         >
       <Container maxWidth="lg" sx={{mt:30}}>
         <Grid container spacing={3} sx={{pt:8}}>
-            <Grid item md={3}>
+            <Grid item md={3} sm={6} xs={12}>
                 <Image
                  src={"https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"} 
                 alt='logo'
@@ -36,7 +36,7 @@ const Footer = () => {
                 <InstagramIcon sx={{"&:hover":{color:"brown",cursor:"pointer"}}}/>
                 </Box>
             </Grid>
-            <Grid item md={3} mt={3}>
+            <Grid item md={3} mt={3} sm={6} xs={12}>
                 <Typography sx={{fontSize:20}}>USEFUL LINKS</Typography>
                 <List>
                 <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none",}}>Home</Link></ListItem>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none",}}>Blog</Link></ListItem>
                 </List>
             </Grid>
-            <Grid item md={3} mt={3}>
+            <Grid item md={3} mt={3} sm={6} xs={12}>
             <Typography sx={{fontSize:20}}>QUICK SEARCH</Typography>
                 <List>
                 <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none"}}>Faq</Link></ListItem>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none"}}>Privacy Policy</Link></ListItem>
                 </List>
             </Grid>
-            <Grid item md={3} mt={3}>
+            <Grid item md={3} mt={3} sm={6} xs={12}>
             <Typography sx={{fontSize:20}}>USEFUL LINKS</Typography>
             <Typography sx={{mt:2,color:COLORS.dark.main}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</Typography>
              <Box

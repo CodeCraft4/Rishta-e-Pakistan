@@ -8,10 +8,10 @@ import AdvanceSearch from './components/AdvanceSearch/page';
 const Search = () => {
   return (
     <div>
-       <Box bgcolor={COLORS.secondary.main} pb={25} textAlign={"center"}>
+       <Box bgcolor={COLORS.secondary.main} pt={{md:15,sm:10,xs:15}} textAlign={"center"}>
         <Container maxWidth="md" sx={{bgcolor:"white",p:3,borderRadius:"8px"}}>
-      <Typography sx={{fontSize:{md:60,sm:60,xs:40},textAlign:"center",fontWeight:"900"}}>Quick Search.....</Typography>
-       <Box  sx={{bgcolor:"white",display:"flex",m:"auto",justifyContent:"center",width:"50%",borderRadius:"5px"}}>
+      <Typography sx={{fontSize:{md:60,sm:60,xs:25},textAlign:"center",fontWeight:"900"}}>Quick Search.....</Typography>
+       <Box  sx={{bgcolor:"white",display:"flex",m:"auto",justifyContent:"center",borderRadius:"5px"}}>
          <TextField
           placeholder="Enter Full Name"
           fullWidth

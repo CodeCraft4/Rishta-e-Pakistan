@@ -9,9 +9,8 @@ const AdvanceSearch = () => {
     <div>
        <Box pt={25} bgcolor={COLORS.secondary.main} pb={25} textAlign={"center"}>
         <Container maxWidth="md" sx={{bgcolor:"white",p:3,borderRadius:"8px"}}>
-      <Typography sx={{fontSize:{md:60,sm:60,xs:40},textAlign:"center",fontWeight:"900"}}>Advance Search.....</Typography>
+        <Typography sx={{fontSize:{md:60,sm:60,xs:25},textAlign:"center",fontWeight:"900"}}>Advance Search.....</Typography>
        <Box  sx={{bgcolor:"white",display:"flex",m:"auto",justifyContent:"center",width:"50%",borderRadius:"5px"}}>
-         
          </Box>
        </Container>
        </Box>

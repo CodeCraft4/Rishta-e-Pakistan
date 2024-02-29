@@ -64,7 +64,7 @@ const Header = () => {
                   sx={{
                     border: `1px solid ${COLORS.primary.main}`,
                     height: "400px",
-                    width: {md:"70%",sm:"60%",xs:"100%"},
+                    width: {md:"70%",sm:"100%",xs:"100%"},
                     bgcolor: "transparent",
                     textAlign: "center",
                     borderRadius: "8px",
