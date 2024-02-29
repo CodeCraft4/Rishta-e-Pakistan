@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MERRAGE_PROPOSAL } from "@/app/constant/content";
 import { COLORS } from "@/app/constant/color";
+import Image from "next/image";
 
 
 
@@ -23,7 +24,6 @@ const Resizable =()=> {
     slidesToScroll: 1,
     autoplay:true,
     arrows:false,
-    lazyLoad:true,
     touchMove:true,
     responsive: [
       {
@@ -64,15 +64,17 @@ const Resizable =()=> {
          height:"550px",
         }}
       >
-        <img 
+        <Image 
         src={"https://wedding-wonders.bugfinder.net/assets/uploads/content/63414f1d42e591665224477.png"}
+        width={200}
+        height={200}
         style={{position:"absolute",top:0,filter:"opacity(70%)",marginTop:"40px"}}
         alt="logo...."
          />
         <Typography sx={{textAlign:"center",fontFamily:"fantasy",fontSize:{md:80,sm:60,xs:50}}}>MERRAGE PROPOSAL</Typography>
         <Slider {...settings}>
                 {MERRAGE_PROPOSAL.map((item,i)=>(
-                    <Box key={item} sx={{textAlign:"center",height:"150px",p:3,mt:8}}>
+                    <Box key={item.title} sx={{textAlign:"center",height:"150px",p:3,mt:8}}>
                    <Typography sx={{color:"red",p:5,fontSize:{md:20,sm:20,xs:13}}}>{item.title}</Typography>
                    {MERRAGE_PROPOSAL[i].person.map((e)=>(
                      <Link key={e} href={"#"} sx={{p:1,textDecoration:"none","&:hover":{color:"gray",textDecoration:"underline"},fontSize:{md:14,sm:20,xs:12}}}>{e}</Link>

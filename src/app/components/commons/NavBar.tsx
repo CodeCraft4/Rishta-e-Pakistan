@@ -44,8 +44,11 @@ export default function DrawerAppBar() {
       setBgColor(true);
     } else setBgColor(false);
   };
+   
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeBgColor);
+  }
 
-  window.addEventListener("scroll", changeBgColor);
 
 
   const drawer = (

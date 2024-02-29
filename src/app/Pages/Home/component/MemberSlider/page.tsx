@@ -24,7 +24,6 @@ const PremiumMember =()=> {
     slidesToScroll: 1,
     autoplay:true,
     arrows:false,
-    lazyLoad:true,
     touchMove:true,
     responsive: [
       {
@@ -65,9 +64,11 @@ const PremiumMember =()=> {
          marginTop:"10%",
         }}
       >
-        <img 
+        <Image 
         src={"https://wedding-wonders.bugfinder.net/assets/uploads/content/6332933b3d1851664258875.png"}
          alt="sideImg"
+         width={100}
+         height={100}
          style={{position:"absolute",marginLeft:'-10%',filter:"opacity(60%)"}}
          />
          <Box>
@@ -75,7 +76,7 @@ const PremiumMember =()=> {
         <Typography sx={{textAlign:"center",color:COLORS.dark.main,fontSize:13,fontStyle:"italic"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit id cupiditate. Repudiandae blanditiis ullam natus quas explicabook.</Typography>
         <Slider {...settings}>
                 {PREMIUM_MEMBERS.map((item)=>(
-                    <Box key={item} sx={{p:3,mt:8,textAlign:'center'}}>
+                    <Box key={item.profileImg} sx={{p:3,mt:8,textAlign:'center'}}>
                       <Box sx={{display:"flex",m:'auto',justifyContent:"center",textAlign:"center"}}>
                       <Image src={item.profileImg} alt="profileImage" width={200} height={200} style={{borderRadius:"50%",}}/>
                       </Box>

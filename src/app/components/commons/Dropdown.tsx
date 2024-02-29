@@ -9,7 +9,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  function handleClick(event) {
+  function handleClick(event:any) {
     setAnchorEl(event.currentTarget);
   }
 

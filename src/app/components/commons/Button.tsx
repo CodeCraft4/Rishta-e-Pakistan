@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button } from "@mui/material";
 import { COLORS } from "@/app/constant/color";
 
-const CustomizeButton = (props) => {
+const CustomizeButton = (props:any) => {
     const {title} = props
   return (
     <div>

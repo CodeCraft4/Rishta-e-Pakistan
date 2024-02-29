@@ -16,7 +16,7 @@ const PackageCard = () => {
          <Container maxWidth="lg" sx={{mt:10}}>
             <Grid container spacing={5}>
             {PACKAGE_CARD.map((data)=>(
-                <Grid item md={4} sm={4} xs={12} key={data}>
+                <Grid item md={4} sm={4} xs={12} key={data.title}>
                     <Box sx={{borderRadius:"8px",p:2,border:"1px solid #bdbdbd",bgcolor:"white"}}>
                         <Box sx={{display:"flex",justifyContent:"center",m:"auto",p:2}}>
                         <AccountCircleIcon sx={{bgcolor:"black",color:"white",fontSize:60,borderRadius:"50%"}}/>
