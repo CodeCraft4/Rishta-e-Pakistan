@@ -23,6 +23,7 @@ const CustomizeButton = (props:any) => {
             bgcolor: COLORS.primary.main,
             borderRadius: 0,
             "&:hover": { bgcolor: "black" },
+            width:"30%"
           }}
         >
           {title}
