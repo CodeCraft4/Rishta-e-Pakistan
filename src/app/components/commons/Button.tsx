@@ -8,11 +8,12 @@ const CustomizeButton = (props:any) => {
     <div>
       <Box
         sx={{
-          outline: "1px solid white",
+          outline: "1px solid cyan",
           p: "4px",
-          width: "30%",
+          justifyContent:"center",
           display: "flex",
           m: "auto",
+          width:"30%",
           mt: 1,
         }}
       >

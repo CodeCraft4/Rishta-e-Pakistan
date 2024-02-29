@@ -1,11 +1,12 @@
 import React from 'react'
 import { COLORS } from '@/app/constant/color'
-import { Box, Container, Typography } from '@mui/material'
+import { Box, Button, Container, Typography } from '@mui/material'
 import { PACKAGE_CARD } from '@/app/constant/content'
 import CheckIcon from '@mui/icons-material/Check';
 import Grid from '@mui/material/Grid';
 
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CustomizeButton from '@/app/components/commons/Button';
 
 const PackageCard = () => {
   return (
@@ -27,6 +28,7 @@ const PackageCard = () => {
                     <Typography sx={{display:"flex",alignItems:"center",p:1}}><CheckIcon sx={{color:COLORS.primary.main}}/>{data.tip2}</Typography>
                     <Typography sx={{display:"flex",alignItems:"center",p:1}}><CheckIcon sx={{color:COLORS.primary.main}}/>{data.tip3}</Typography>
                     <Typography sx={{display:"flex",alignItems:"center",p:1}}><CheckIcon sx={{color:COLORS.primary.main}}/>{data.tip4}</Typography>
+                    <CustomizeButton title={"PERCHASE"}/>
                     </Box>
                 </Grid>
             ))}
