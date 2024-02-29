@@ -17,7 +17,7 @@ const Footer = () => {
         sx={{bgcolor:"#e0e0e0"}}
 
         >
-      <Container maxWidth="lg" sx={{mt:30}}>
+      <Container maxWidth="lg">
         <Grid container spacing={3} sx={{pt:8}}>
             <Grid item md={3} sm={6} xs={12}>
                 <Image

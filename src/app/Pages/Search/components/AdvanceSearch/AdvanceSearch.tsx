@@ -29,73 +29,154 @@ const AdvanceSearch = () => {
           maxWidth="md"
           sx={{ bgcolor: "white", p: 3, borderRadius: "8px" }}
         >
-          <Grid container spacing={3} sx={{p:10,textAlign:"start",fontWeight:"bold"}}>
-            <Grid item md={6}>
+          <Grid
+            container
+            spacing={3}
+            sx={{ p: {md:10,sm:5,xs:1}, textAlign: "start", fontWeight: "bold" }}
+          >
+            <Grid item md={6} sm={6} xs={12}>
               <Grid container spacing={1}>
                 <Grid
                   item
                   md={6}
-                  sx={{ display: "flex", alignItems: "center",fontWeight:"bold"}}
+                  sm={6}
+                  xs={6}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    fontWeight: "bold",
+                  }}
                 >
                   Age:
                   <TextField placeholder="from" type="number" size="small" />
                 </Grid>
-                <Grid item md={6}>
+                <Grid item md={6} sm={6} xs={6}>
                   <TextField placeholder="to" type="number" size="small" />
                 </Grid>
               </Grid>
               <Box p={1}>
-              Religion:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+                Religion:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
-                <Box p={1}>
-              Caste:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+              </Box>
+              <Box p={1}>
+                Caste:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
-                <Box p={1}>
-              Education:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+              </Box>
+              <Box p={1}>
+                Education:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
-                <Box p={1}>
-              Country:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+              </Box>
+              <Box p={1}>
+                Country:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
-                <Box p={1}>
-              Citezenship:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+              </Box>
+              <Box p={1}>
+                Citezenship:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
+              </Box>
             </Grid>
-            <Grid item md={6}>
+            <Grid item md={6} sm={6} xs={12}>
               <Grid container spacing={1}>
                 <Grid
                   item
                   md={6}
-                  sx={{display:'flex',alignItems:"center",fontWeight:"bold"}}
+                  sm={6}
+                  xs={6}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Height:
+                  <TextField placeholder="from" type="number" size="small" />
+                </Grid>
+                <Grid item md={6} sm={6} xs={6}>
+                  <TextField placeholder="to" type="number" size="small" />
+                </Grid>
+              </Grid>
+              <Box p={1}>
+                Religion:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
+                />
+              </Box>
+              <Box p={1}>
+                Caste:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
+                />
+              </Box>
+              <Box p={1}>
+                Education:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
+                />
+              </Box>
+              <Box p={1}>
+                Country:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
+                />
+              </Box>
+              <Box p={1}>
+                <FormGroup>
+                  <Typography sx={{fontWeight:"bold",textAlign:"center"}}>Show:</Typography>
+            <FormControlLabel control={<Checkbox />} label="Profile with Photo" />
+            <FormControlLabel control={<Checkbox />} label="Profile by Family" />
+            <FormControlLabel control={<Checkbox />} label="Featured by Profile only" />
+           </FormGroup>
+              </Box>
+            </Grid>
+            {/* <Grid item md={6} sm={6} xs={12}>
+              <Grid container spacing={1}>
+                <Grid
+                 item
+                 md={6}
+                 sm={6}
+                 xs={6}
+                 sx={{
+                   display: "flex",
+                   alignItems: "center",
+                   fontWeight: "bold",
+                 }}
                 >
                   Height:
                   <TextField placeholder="from" type="number" size="small" />
@@ -105,48 +186,49 @@ const AdvanceSearch = () => {
                 </Grid>
               </Grid>
               <Box p={1}>
-
-              Sec:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+                Sec:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
-                <Box p={1}>
-              Language:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+              </Box>
+              <Box p={1}>
+                Language:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
-                <Box p={1}>
-              Occupation:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+              </Box>
+              <Box p={1}>
+                Occupation:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
-                <Box p={1}>
-              City:
-              <TextField
-                placeholder="Any"
-                fullWidth
-                type="number"
-                size="small"
+              </Box>
+              <Box p={1}>
+                City:
+                <TextField
+                  placeholder="Any"
+                  fullWidth
+                  type="number"
+                  size="small"
                 />
-                </Box>
+              </Box>
               <FormGroup>
-                <Typography sx={{textAlign:"center",fontWeight:"bold"}}>Show Profile:</Typography>
+                <Typography sx={{ textAlign: "center", fontWeight: "bold" }}>
+                  Show Profile:
+                </Typography>
                 <FormControlLabel
                   control={<Checkbox />}
                   label="Profile with Photo"
-                  />
+                />
                 <FormControlLabel
                   control={<Checkbox />}
                   label="Featured by Family"
@@ -156,7 +238,7 @@ const AdvanceSearch = () => {
                   label="Featured by Profile only"
                 />
               </FormGroup>
-            </Grid>
+            </Grid> */}
           </Grid>
           <Button
             variant="contained"
