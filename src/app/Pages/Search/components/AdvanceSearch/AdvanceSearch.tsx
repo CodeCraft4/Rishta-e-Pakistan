@@ -9,8 +9,11 @@ import {
   Checkbox,
   FormControlLabel,
   Button,
+  Select,
+  MenuItem
 } from "@mui/material";
 import { COLORS } from "@/app/constant/color";
+import {RELIGION} from "@/app/constant/content"
 
 const AdvanceSearch = () => {
   return (
@@ -32,7 +35,7 @@ const AdvanceSearch = () => {
           <Grid
             container
             spacing={3}
-            sx={{ p: {md:10,sm:5,xs:1}, textAlign: "start", fontWeight: "bold" }}
+            sx={{ px: {md:10,sm:5,xs:1}, textAlign: "start", fontWeight: "bold" }}
           >
             <Grid item md={6} sm={6} xs={12}>
               <Grid container spacing={1}>
@@ -56,12 +59,16 @@ const AdvanceSearch = () => {
               </Grid>
               <Box p={1}>
                 Religion:
-                <TextField
+                <Select
                   placeholder="Any"
                   fullWidth
                   type="number"
                   size="small"
-                />
+                >
+                  {RELIGION.map((rel)=>(
+                    <MenuItem>{rel}</MenuItem>
+                  ))}
+                  </Select>
               </Box>
               <Box p={1}>
                 Caste:
@@ -121,72 +128,7 @@ const AdvanceSearch = () => {
                 </Grid>
               </Grid>
               <Box p={1}>
-                Religion:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  type="number"
-                  size="small"
-                />
-              </Box>
-              <Box p={1}>
-                Caste:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  type="number"
-                  size="small"
-                />
-              </Box>
-              <Box p={1}>
-                Education:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  type="number"
-                  size="small"
-                />
-              </Box>
-              <Box p={1}>
-                Country:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  type="number"
-                  size="small"
-                />
-              </Box>
-              <Box p={1}>
-                <FormGroup>
-                  <Typography sx={{fontWeight:"bold",textAlign:"center"}}>Show:</Typography>
-            <FormControlLabel control={<Checkbox />} label="Profile with Photo" />
-            <FormControlLabel control={<Checkbox />} label="Profile by Family" />
-            <FormControlLabel control={<Checkbox />} label="Featured by Profile only" />
-           </FormGroup>
-              </Box>
-            </Grid>
-            {/* <Grid item md={6} sm={6} xs={12}>
-              <Grid container spacing={1}>
-                <Grid
-                 item
-                 md={6}
-                 sm={6}
-                 xs={6}
-                 sx={{
-                   display: "flex",
-                   alignItems: "center",
-                   fontWeight: "bold",
-                 }}
-                >
-                  Height:
-                  <TextField placeholder="from" type="number" size="small" />
-                </Grid>
-                <Grid item md={6}>
-                  <TextField placeholder="to" type="number" size="small" />
-                </Grid>
-              </Grid>
-              <Box p={1}>
-                Sec:
+                Sect:
                 <TextField
                   placeholder="Any"
                   fullWidth
@@ -213,7 +155,7 @@ const AdvanceSearch = () => {
                 />
               </Box>
               <Box p={1}>
-                City:
+                State:
                 <TextField
                   placeholder="Any"
                   fullWidth
@@ -221,24 +163,18 @@ const AdvanceSearch = () => {
                   size="small"
                 />
               </Box>
-              <FormGroup>
-                <Typography sx={{ textAlign: "center", fontWeight: "bold" }}>
-                  Show Profile:
-                </Typography>
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Profile with Photo"
-                />
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Featured by Family"
-                />
-                <FormControlLabel
-                  control={<Checkbox />}
-                  label="Featured by Profile only"
-                />
-              </FormGroup>
-            </Grid> */}
+            </Grid>
+          </Grid>
+          <Grid container spacing={3} sx={{p:4}}>
+            <Grid item md={4}>
+              Show: <FormControlLabel control={<Checkbox />} label="Profile with Phtoto" />
+            </Grid>
+            <Grid item md={4}>
+            <FormControlLabel control={<Checkbox />} label="Featured by Fimily" />
+            </Grid>
+            <Grid item md={4}>
+            <FormControlLabel control={<Checkbox />} label="Featured by Profile only" />
+            </Grid>
           </Grid>
           <Button
             variant="contained"

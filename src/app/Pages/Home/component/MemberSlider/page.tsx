@@ -80,7 +80,7 @@ const PremiumMember =()=> {
                       <Box sx={{display:"flex",m:'auto',justifyContent:"center",textAlign:"center"}}>
                       <Image src={item.profileImg} alt="profileImage" width={200} height={200} style={{borderRadius:"50%",}}/>
                       </Box>
-                   <Typography sx={{mt:4,fontSize:{md:18,sm:18,xs:15}}}><b>Name:</b>{item.name}</Typography>
+                   <Typography sx={{mt:4,fontSize:{md:18,sm:18,xs:15}}}>{item.name}</Typography>
                    <Typography sx={{pt:1}}><b>Married:</b>{item.married}</Typography>
                    <Typography sx={{pt:1}}><b>Age:</b>{item.age}</Typography>
                    <Typography sx={{pt:1}}><b></b>{item.profession}</Typography>

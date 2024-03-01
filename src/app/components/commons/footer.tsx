@@ -14,8 +14,7 @@ const Footer = () => {
   return (
     <div>
         <Box
-        sx={{bgcolor:"#e0e0e0"}}
-
+        sx={{bgcolor:"#bdbdbd"}}
         >
       <Container maxWidth="lg">
         <Grid container spacing={3} sx={{pt:8}}>
@@ -23,40 +22,39 @@ const Footer = () => {
                 <Image
                  src={"https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"} 
                 alt='logo'
-                width={250}
-                height={80}
+                width={200}
+                height={60}
                 />
-                <Typography sx={{mt:2,color:COLORS.dark.main}}>7 Green Lake Street Crawfordsville, IN 47933</Typography>
-                <Typography sx={{mt:2,color:COLORS.dark.main}}>Email:info@metrimony.com</Typography>
-                <Typography sx={{mt:2,color:COLORS.dark.main}}>Phone: +1 800 123 456 789</Typography>
+                <Typography sx={{mt:2}}>Email:info@metrimony.com</Typography>
+                <Typography sx={{mt:2}}>Phone: +1 800 123 456 789</Typography>
                 <Box sx={{p:2,}}>
-                <FacebookIcon sx={{"&:hover":{color:"brown",cursor:"pointer"}}}/>
-                <TwitterIcon sx={{"&:hover":{color:"brown",cursor:"pointer"}}}/>
-                <LinkedInIcon sx={{"&:hover":{color:"brown",cursor:"pointer"}}}/>
-                <InstagramIcon sx={{"&:hover":{color:"brown",cursor:"pointer"}}}/>
+                <FacebookIcon fontSize='large' sx={{"&:hover":{color:COLORS.primary.main,cursor:"pointer"}}}/>
+                <TwitterIcon fontSize='large' sx={{"&:hover":{color:COLORS.primary.main,cursor:"pointer"}}}/>
+                <LinkedInIcon fontSize='large' sx={{"&:hover":{color:COLORS.primary.main,cursor:"pointer"}}}/>
+                <InstagramIcon fontSize='large' sx={{"&:hover":{color:COLORS.primary.main,cursor:"pointer"}}}/>
                 </Box>
             </Grid>
             <Grid item md={3} mt={3} sm={6} xs={12}>
-                <Typography sx={{fontSize:20}}>USEFUL LINKS</Typography>
+                <Typography sx={{fontSize:20,fontWeight:"bold"}}>USEFUL LINKS</Typography>
                 <List>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none",}}>Home</Link></ListItem>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none",}}>About</Link></ListItem>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none",}}>Peckage</Link></ListItem>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none",}}>Blog</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none",}}>Home</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none",}}>About</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none",}}>Peckage</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none",}}>Blog</Link></ListItem>
                 </List>
             </Grid>
             <Grid item md={3} mt={3} sm={6} xs={12}>
-            <Typography sx={{fontSize:20}}>QUICK SEARCH</Typography>
+            <Typography sx={{fontSize:20,fontWeight:"bold"}}>QUICK SEARCH</Typography>
                 <List>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none"}}>Faq</Link></ListItem>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none"}}>Contact</Link></ListItem>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none"}}>Term & Condition</Link></ListItem>
-                <ListItem><Link href="/" style={{fontSize:13,color:COLORS.dark.main,textDecoration:"none"}}>Privacy Policy</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none"}}>Faq</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none"}}>Contact</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none"}}>Term & Condition</Link></ListItem>
+                <ListItem><Link href="/" style={{fontSize:15,textDecoration:"none"}}>Privacy Policy</Link></ListItem>
                 </List>
             </Grid>
             <Grid item md={3} mt={3} sm={6} xs={12}>
-            <Typography sx={{fontSize:20}}>USEFUL LINKS</Typography>
-            <Typography sx={{mt:2,color:COLORS.dark.main}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</Typography>
+            <Typography sx={{fontSize:20,fontWeight:"bold"}}>SUBSCRIPTION</Typography>
+            <Typography sx={{mt:2,}}>Stay in the loop! Subscribe to our newsletter for exclusive update,tips and promotions.</Typography>
              <Box
              sx={{display:"flex",alignItems:"center",border:"1px solid #e0e0e0",borderRadius:"4px",mt:3}}
              >

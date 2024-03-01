@@ -3,9 +3,7 @@ import Home from './Pages/Home/page'
 
 const App=()=>{
   return(
-    <div>
       <Home/>
-    </div>
   )
 }
 
