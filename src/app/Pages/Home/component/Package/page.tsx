@@ -1,10 +1,10 @@
 import React from "react";
-import { COLORS } from "@/app/constant/color";
+import { COLORS } from "@/constant/color";
 import { Box, Button, Container, Typography } from "@mui/material";
-import { PACKAGE_CARD } from "@/app/constant/content";
+import { PACKAGE_CARD } from "@/constant/content";
 import CheckIcon from "@mui/icons-material/Check";
 import Grid from "@mui/material/Grid";
-import CustomizeButton from "@/app/components/commons/Button";
+import CustomizeButton from "@/components/Button/Button";
 import WebhookIcon from '@mui/icons-material/Webhook';
 
 const PackageCard = () => {
@@ -63,7 +63,7 @@ const PackageCard = () => {
                     variant="h5"
                     sx={{
                       textAlign: "center",
-                      fontSize: { md: 25, sm: 40, xs: 30 },
+                      fontSize: { md: 25, sm: 40, xs: 25 },
                       pt:5,
                       fontWeight:"bold",
                       fontStyle:"italic"
@@ -71,7 +71,7 @@ const PackageCard = () => {
                   >
                     {data.title}
                   </Typography>
-                  <Typography sx={{textAlign: "center",fontSize:{md:40} }}>
+                  <Typography sx={{textAlign: "center",fontSize:{md:40,sm:35,xs:25} }}>
                     <small>$</small>
                     <b>{data.price}</b>
                   </Typography>
@@ -99,7 +99,7 @@ const PackageCard = () => {
                     <CheckIcon sx={{ color: COLORS.primary.main }} />
                     {data.tip4}
                   </Typography>
-                  <CustomizeButton title={"Buy.."} />
+                  <CustomizeButton title={"PURCHASE"} />
                 </Box>
               </Grid>
             ))}

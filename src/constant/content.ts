@@ -1,3 +1,4 @@
+// Wedding proposal person he and she....
 export const MERRAGE_PROPOSAL = [
         {
             title:"Merrage Proposal by Cast",
@@ -15,6 +16,7 @@ export const MERRAGE_PROPOSAL = [
 ]
 
 
+// Premium member card.....
 export const PREMIUM_MEMBERS=[
     {
         profileImg:"https://wedding-wonders.bugfinder.net/assets/uploads/users/63b1eb86e5b491672604550.jpg",
@@ -78,7 +80,7 @@ export const PREMIUM_MEMBERS=[
 ]
 
 
-
+// Package card for wedding....
 export const PACKAGE_CARD = [
     {
         title:"Premium Package",
@@ -107,9 +109,12 @@ export const PACKAGE_CARD = [
 ]
 
 
+// Select option for caste...
+export const CAST_DROPDOWN=["Arain","Jatt","Syed","Gujjar","Pathan","Rajput","Pungabi","Indian"]
+ 
 
- export const CAST_DROPDOWN=["Arain","Jatt","Syed","Gujjar","Pathan","Rajput","Pungabi","Indian"]
- export const COUNTRY_DROPDOWN=[
+// Select option for Country...
+export const COUNTRY_DROPDOWN=[
    "Afghanistan", 
    "land Islands", 
    "Albania", 
@@ -190,8 +195,9 @@ export const PACKAGE_CARD = [
 
 
 
+//  Selcet option for Religion....
     export const RELIGION=[
-        "Christianity",
+    "Christianity",
     "Islam",
     "Hinduism",
     "Buddhism",

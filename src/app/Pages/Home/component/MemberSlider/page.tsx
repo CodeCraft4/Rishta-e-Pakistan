@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import {Box,Typography} from '@mui/material'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { PREMIUM_MEMBERS } from "@/app/constant/content";
-import { COLORS } from "@/app/constant/color";
+import { PREMIUM_MEMBERS } from "@/constant/content";
+import { COLORS } from "@/constant/color";
 import Image from 'next/image'
 
 

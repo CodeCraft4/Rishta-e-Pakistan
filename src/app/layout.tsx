@@ -1,8 +1,8 @@
 import { Mulish } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
-import DrawerAppBar from "./components/commons/NavBar";
-import Footer from "./components/commons/footer";
+import DrawerAppBar from "@/components/Navbar/NavBar";
+import Footer from '../components/Footer/footer';
 
 const inter = Mulish({
   weight:"500",

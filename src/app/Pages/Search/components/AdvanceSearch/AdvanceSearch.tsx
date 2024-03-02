@@ -12,13 +12,13 @@ import {
   Select,
   MenuItem
 } from "@mui/material";
-import { COLORS } from "@/app/constant/color";
-import {RELIGION} from "@/app/constant/content"
+import { COLORS } from "@/constant/color";
+import {RELIGION} from "@/constant/content"
 
 const AdvanceSearch = () => {
   return (
     <div>
-      <Box pt={15} bgcolor={COLORS.secondary.main} pb={25} textAlign={"center"}>
+      <Box pt={15} pb={25} textAlign={"center"}>
         <Typography
           sx={{
             fontSize: { md: 60, sm: 60, xs: 25 },
@@ -62,11 +62,10 @@ const AdvanceSearch = () => {
                 <Select
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 >
                   {RELIGION.map((rel)=>(
-                    <MenuItem>{rel}</MenuItem>
+                    <MenuItem key={rel}>{rel}</MenuItem>
                   ))}
                   </Select>
               </Box>
@@ -75,7 +74,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>
@@ -84,7 +82,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>
@@ -93,7 +90,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>
@@ -102,7 +98,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>
@@ -132,7 +127,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>
@@ -141,7 +135,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>
@@ -150,7 +143,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>
@@ -159,7 +151,6 @@ const AdvanceSearch = () => {
                 <TextField
                   placeholder="Any"
                   fullWidth
-                  type="number"
                   size="small"
                 />
               </Box>

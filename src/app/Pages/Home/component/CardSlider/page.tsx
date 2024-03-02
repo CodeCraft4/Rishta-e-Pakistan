@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import { Box, Typography, Grid, Link } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { MERRAGE_PROPOSAL } from "@/app/constant/content";
-import { COLORS } from "@/app/constant/color";
+import { MERRAGE_PROPOSAL } from "@/constant/content";
+import { COLORS } from "@/constant/color";
 import Image from "next/image";
 
 const Resizable = () => {

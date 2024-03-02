@@ -15,13 +15,14 @@ import {
   InputLabel,
   Select,
   MenuItem,
+  SelectChangeEvent,
 } from "@mui/material";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import { Theme, useTheme } from "@mui/material/styles";
 import Image from "next/image";
-import CustomizeButton from "@/app/components/commons/Button";
-import { COLORS } from "@/app/constant/color";
-import { CAST_DROPDOWN, COUNTRY_DROPDOWN } from "@/app/constant/content";
+import CustomizeButton from "@/components/Button/Button";
+import { COLORS } from "@/constant/color";
+import { CAST_DROPDOWN, COUNTRY_DROPDOWN } from "@/constant/content";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -175,7 +176,7 @@ const Header = () => {
                           borderRadius: "4px",
                           color: "white",
                         }}
-                        placeholder={18}
+                        placeholder={"18"}
                       />
                       to:
                       <TextField
@@ -186,7 +187,7 @@ const Header = () => {
                           borderRadius: "4px",
                           color: "white",
                         }}
-                        placeholder={50}
+                        placeholder={"50"}
                       />
                     </Box>
                     <Box
