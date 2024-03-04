@@ -30,7 +30,7 @@ const boxStyle = {
   marginTop:'5px',
   borderRadius: "5px",
   width:"100px",
-  p: 0.7,
+  padding: 0.5,
   position: "relative",
   transition: "1s",
   "&:hover": {

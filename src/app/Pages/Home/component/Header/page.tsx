@@ -168,7 +168,7 @@ const Header = () => {
                       }}
                     >
                       Caste:
-                      <FormControl sx={{ width: { md: 200 } }}>
+                      <FormControl sx={{ width: { md: 200,sm:150,xs:100 } }}>
                         <Select
                           size="small"
                           input={<OutlinedInput/>}
@@ -186,7 +186,7 @@ const Header = () => {
                       </FormControl>
                     </Box>
                     Country:
-                    <FormControl sx={{ width: { md: 300 } }}>
+                    <FormControl sx={{ width: { md: 300,sm:280,xs:250 } }}>
                       <Select
                         size="small"
                         input={<OutlinedInput/>}
