@@ -167,6 +167,7 @@ const Footer = () => {
                   border: "1px solid #e0e0e0",
                   borderRadius: "4px",
                   mt: 3,
+                  mb:4,
                 }}
               >
                 <TextField

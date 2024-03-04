@@ -74,7 +74,7 @@ const AdvanceSearch = () => {
               </Grid>
               <Box p={1}>
                 Religion:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -90,7 +90,7 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Caste:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -106,7 +106,7 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Religion:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -122,7 +122,7 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Country:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -138,7 +138,7 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Citezenship:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -175,7 +175,7 @@ const AdvanceSearch = () => {
               </Grid>
               <Box p={1}>
                 Sect:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -191,7 +191,7 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 language:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -207,7 +207,7 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 occupation:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
@@ -223,7 +223,7 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 State:
-                <FormControl sx={{ width: { md: 300 } }}>
+                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
