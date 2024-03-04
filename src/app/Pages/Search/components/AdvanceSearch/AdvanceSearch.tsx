@@ -24,6 +24,7 @@ import {
   STATE_LIST,
   CITIZENSHIP,
 } from "@/constant/content";
+import CustomizeButton from "@/components/Button/Button";
 
 const AdvanceSearch = () => {
   return (
@@ -78,7 +79,7 @@ const AdvanceSearch = () => {
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{ border: "2px solid white", color: "black"}}
                   >
                     {RELIGION.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -243,34 +244,25 @@ const AdvanceSearch = () => {
             <Grid item md={4}>
               Show:{" "}
               <FormControlLabel
-                control={<Checkbox defaultChecked />}
+                control={<Checkbox defaultChecked sx={{color:COLORS.primary.main}}/>}
                 label="Profile with Phtoto"
+                
               />
             </Grid>
             <Grid item md={4}>
               <FormControlLabel
-                control={<Checkbox />}
+                control={<Checkbox sx={{color:COLORS.primary.main}}/>}
                 label="Featured by Fimily"
               />
             </Grid>
             <Grid item md={4}>
               <FormControlLabel
-                control={<Checkbox />}
+                control={<Checkbox sx={{color:COLORS.primary.main}}/>}
                 label="Featured by Profile only"
               />
             </Grid>
           </Grid>
-          <Button
-            variant="contained"
-            sx={{
-              bgcolor: COLORS.primary.main,
-              "&:hover": {
-                bgcolor: COLORS.dark.main,
-              },
-            }}
-          >
-            Search
-          </Button>
+          <CustomizeButton title="Search"/>
         </Container>
       </Box>
     </div>
