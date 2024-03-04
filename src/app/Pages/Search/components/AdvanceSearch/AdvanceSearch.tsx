@@ -5,15 +5,25 @@ import {
   TextField,
   Container,
   Grid,
-  FormGroup,
   Checkbox,
   FormControlLabel,
   Button,
   Select,
-  MenuItem
+  MenuItem,
+  FormControl,
+  OutlinedInput,
 } from "@mui/material";
 import { COLORS } from "@/constant/color";
-import {RELIGION} from "@/constant/content"
+import {
+  RELIGION,
+  LANGUAGE,
+  EDUCATION,
+  OCCUPATION,
+  COUNTRY_DROPDOWN,
+  CAST_DROPDOWN,
+  STATE_LIST,
+  CITIZENSHIP,
+} from "@/constant/content";
 
 const AdvanceSearch = () => {
   return (
@@ -24,6 +34,7 @@ const AdvanceSearch = () => {
             fontSize: { md: 60, sm: 60, xs: 25 },
             textAlign: "center",
             fontWeight: "bold",
+            color:COLORS.primary.main
           }}
         >
           Advance Search.....
@@ -35,7 +46,11 @@ const AdvanceSearch = () => {
           <Grid
             container
             spacing={3}
-            sx={{ px: {md:10,sm:5,xs:1}, textAlign: "start", fontWeight: "bold" }}
+            sx={{
+              px: { md: 10, sm: 5, xs: 1 },
+              textAlign: "start",
+              fontWeight: "bold",
+            }}
           >
             <Grid item md={6} sm={6} xs={12}>
               <Grid container spacing={1}>
@@ -51,55 +66,91 @@ const AdvanceSearch = () => {
                   }}
                 >
                   Age:
-                  <TextField placeholder="from" type="number" size="small" />
+                  <TextField placeholder="from" type="number" size="small" value={"18"} />
                 </Grid>
                 <Grid item md={6} sm={6} xs={6}>
-                  <TextField placeholder="to" type="number" size="small" />
+                  <TextField placeholder="to" type="number" size="small" value={"50"} />
                 </Grid>
               </Grid>
               <Box p={1}>
                 Religion:
-                <Select
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                >
-                  {RELIGION.map((rel)=>(
-                    <MenuItem key={rel}>{rel}</MenuItem>
-                  ))}
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {RELIGION.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
                   </Select>
+                </FormControl>
               </Box>
               <Box p={1}>
                 Caste:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {CAST_DROPDOWN.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
               <Box p={1}>
-                Education:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                Religion:
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {EDUCATION.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
               <Box p={1}>
                 Country:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {COUNTRY_DROPDOWN.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
               <Box p={1}>
                 Citezenship:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {CITIZENSHIP.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
@@ -119,52 +170,94 @@ const AdvanceSearch = () => {
                   <TextField placeholder="from" type="number" size="small" />
                 </Grid>
                 <Grid item md={6} sm={6} xs={6}>
-                  <TextField placeholder="to" type="number" size="small" />
+                  <TextField placeholder="to" type="number" size="small"/>
                 </Grid>
               </Grid>
               <Box p={1}>
                 Sect:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {CITIZENSHIP.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
               <Box p={1}>
-                Language:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                language:
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {LANGUAGE.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
               <Box p={1}>
-                Occupation:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                occupation:
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {OCCUPATION.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
               <Box p={1}>
                 State:
-                <TextField
-                  placeholder="Any"
-                  fullWidth
-                  size="small"
-                />
+                <FormControl sx={{ width: { md: 300 } }}>
+                  <Select
+                    size="small"
+                    input={<OutlinedInput />}
+                    sx={{ border: "2px solid white", color: "black" }}
+                  >
+                    {STATE_LIST.map((name) => (
+                      <MenuItem key={name} value={name}>
+                        {name}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
               </Box>
             </Grid>
           </Grid>
-          <Grid container spacing={3} sx={{p:4}}>
+          <Grid container spacing={3} sx={{ p: 4 }}>
             <Grid item md={4}>
-              Show: <FormControlLabel control={<Checkbox />} label="Profile with Phtoto" />
+              Show:{" "}
+              <FormControlLabel
+                control={<Checkbox defaultChecked />}
+                label="Profile with Phtoto"
+              />
             </Grid>
             <Grid item md={4}>
-            <FormControlLabel control={<Checkbox />} label="Featured by Fimily" />
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Featured by Fimily"
+              />
             </Grid>
             <Grid item md={4}>
-            <FormControlLabel control={<Checkbox />} label="Featured by Profile only" />
+              <FormControlLabel
+                control={<Checkbox />}
+                label="Featured by Profile only"
+              />
             </Grid>
           </Grid>
           <Button

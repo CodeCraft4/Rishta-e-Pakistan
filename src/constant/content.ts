@@ -206,3 +206,129 @@ export const COUNTRY_DROPDOWN=[
     "Unaffiliated",
     "Other Religions",
 ]
+
+
+// For language Selection.
+
+export const LANGUAGE=[
+     "Afar",          
+     "Abkhazian",
+     "Avestan",
+     "Afrikaans",
+     "Akan",
+     "Amharic",
+     "Aragonese",
+     "Arabic",
+     "Assamese",
+     "Avaric",
+     "Aymara",
+     "Azerbaijani",
+     "Bashkir",
+     "Belarusian",
+     "Bulgarian",
+     "Bihari languages",
+     "Bislama",
+     "Bambara",
+     "Bengali",
+     "Tibetan",
+     "Breton",
+     "Bosnian",
+     "Catalan; Valencian",
+     "Chechen",
+     "Chamorro",
+     "Corsican",
+     "Cree",
+     "Czech",
+]
+
+
+// Education....select
+
+export const EDUCATION=[
+   "Alabama A & M University",
+     "University of Alabama at Birmingham",
+     "Amridge University",
+     "University of Alabama in Huntsville",
+     "Alabama State University",
+     "University of Alabama System Office",
+     "The University of Alabama",
+     "Central Alabama Community College",
+]
+
+
+// Occupation selection..
+export const OCCUPATION=[
+    "accountant",
+    "actor",
+    "actuary",
+    "adhesive bonding machine tender",
+    "adjudicator",
+    "administrative assistant",
+    "administrative services manager",
+    "adult education teacher",
+    "advertising manager",
+    "advertising sales agent",
+    "aerobics instructor",
+    "aerospace engineer",
+    "aerospace engineering technician",
+    "agent",
+    "agricultural engineer",
+    "agricultural equipment operator",
+    "agricultural grader",
+    "agricultural inspector",
+    "agricultural manager",
+    "agricultural sciences teacher",
+    "agricultural sorter",
+    "agricultural technician",
+]
+
+
+// State list....
+export const STATE_LIST=[
+    "Alabama",
+    "Alaska",
+    "American Samoa",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "District Of Columbia",
+    "Federated States Of Micronesia",
+    "Florida",
+    "Georgia",
+    "Guam",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+]
+
+// CitizenShip select...
+export const CITIZENSHIP=[
+    "Afghan",
+    "Albanian",
+    "Algerian",
+    "American",
+    "Andorran",
+    "Angolan",
+    "Antiguans",
+    "Argentinean",
+    "Armenian",
+    "Australian",
+    "Austrian",
+    "Azerbaijani",
+    "Bahamian",
+    "Bahraini",
+    "Bangladeshi",
+    "Barbadian",
+    "Barbudans",
+    "Batswana",
+    "Belarusian",
+    "Belgian",
+]

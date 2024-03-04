@@ -24,40 +24,8 @@ import CustomizeButton from "@/components/Button/Button";
 import { COLORS } from "@/constant/color";
 import { CAST_DROPDOWN, COUNTRY_DROPDOWN } from "@/constant/content";
 
-const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
-const MenuProps = {
-  PaperProps: {
-    style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
-    },
-  },
-};
-
-function getStyles(name: string, personName: string[], theme: Theme) {
-  return {
-    fontWeight:
-      personName.indexOf(name) === -1
-        ? theme.typography.fontWeightRegular
-        : theme.typography.fontWeightMedium,
-  };
-}
 
 const Header = () => {
-
-  const theme = useTheme();
-  const [personName, setPersonName] = React.useState<string[]>([]);
-
-  const handleChange = (event: SelectChangeEvent<typeof personName>) => {
-    const {
-      target: { value },
-    } = event;
-    setPersonName(
-      // On autofill we get a stringified value.
-      typeof value === "string" ? value.split(",") : value
-    );
-  };
 
   return (
     <div>
@@ -202,18 +170,14 @@ const Header = () => {
                       Caste:
                       <FormControl sx={{ width: { md: 200 } }}>
                         <Select
-                          value={personName}
                           size="small"
-                          onChange={handleChange}
                           input={<OutlinedInput/>}
-                          MenuProps={MenuProps}
                           sx={{ border: "2px solid white", color: "white" }}
                         >
                           {CAST_DROPDOWN.map((name) => (
                             <MenuItem
                               key={name}
                               value={name}
-                              style={getStyles(name, personName, theme)}
                             >
                               {name}
                             </MenuItem>
@@ -225,17 +189,13 @@ const Header = () => {
                     <FormControl sx={{ width: { md: 300 } }}>
                       <Select
                         size="small"
-                        value={personName}
-                        onChange={handleChange}
                         input={<OutlinedInput/>}
-                        MenuProps={MenuProps}
                         sx={{ border: "2px solid white", color: "white" }}
                       >
                         {COUNTRY_DROPDOWN.map((name) => (
                           <MenuItem
                             key={name}
                             value={name}
-                            style={getStyles(name, personName, theme)}
                           >
                             {name}
                           </MenuItem>
