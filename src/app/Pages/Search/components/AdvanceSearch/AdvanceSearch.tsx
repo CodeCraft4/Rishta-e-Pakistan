@@ -35,7 +35,7 @@ const AdvanceSearch = () => {
             fontSize: { md: 60, sm: 60, xs: 25 },
             textAlign: "center",
             fontWeight: "bold",
-            color:COLORS.primary.main
+            color: COLORS.primary.main,
           }}
         >
           Advance Search.....
@@ -66,20 +66,53 @@ const AdvanceSearch = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Age:
-                  <TextField placeholder="from" type="number" size="small" value={"18"} />
+                  <Box
+                    sx={{
+                      display: { md: "block", sm: "block", xs: "flex" },
+                    }}
+                  >
+                    <Typography fontWeight={"bold"}>Age:</Typography>
+                    <TextField
+                      placeholder="from"
+                      type="number"
+                      size="small"
+                      value={"18"}
+                      sx={{
+                        boxShadow: "inset 0px 0px 2px 2px gray",
+                      }}
+                    />
+                  </Box>
                 </Grid>
                 <Grid item md={6} sm={6} xs={6}>
-                  <TextField placeholder="to" type="number" size="small" value={"50"} />
+                  <Box
+                    sx={{
+                      display: { md: "block", sm: "block", xs: "flex" },
+                    }}
+                  >
+                    <Typography fontWeight={"bold"}>To:</Typography>
+                    <TextField
+                      placeholder="from"
+                      type="number"
+                      size="small"
+                      value={"50"}
+                      sx={{
+                        boxShadow: "inset 0px 0px 2px 2px gray",
+                      }}
+                    />
+                  </Box>
                 </Grid>
               </Grid>
               <Box p={1}>
                 Religion:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black"}}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {RELIGION.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -91,11 +124,15 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Caste:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {CAST_DROPDOWN.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -107,11 +144,15 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Religion:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {EDUCATION.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -123,11 +164,15 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Country:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {COUNTRY_DROPDOWN.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -139,11 +184,15 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 Citezenship:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {CITIZENSHIP.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -167,20 +216,51 @@ const AdvanceSearch = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Height:
-                  <TextField placeholder="from" type="number" size="small" />
+                  <Box
+                    sx={{
+                      display: { md: "block", sm: "block", xs: "flex" },
+                    }}
+                  >
+                    <Typography fontWeight={"bold"}>Height:</Typography>
+                    <TextField
+                      placeholder="from"
+                      type="number"
+                      size="small"
+                      sx={{
+                        boxShadow: "inset 0px 0px 2px 2px gray",
+                      }}
+                    />
+                  </Box>
                 </Grid>
                 <Grid item md={6} sm={6} xs={6}>
-                  <TextField placeholder="to" type="number" size="small"/>
+                  <Box
+                    sx={{
+                      display: { md: "block", sm: "block", xs: "flex" },
+                    }}
+                  >
+                    <Typography fontWeight={"bold"}>To:</Typography>
+                    <TextField
+                      placeholder="to"
+                      type="number"
+                      size="small"
+                      sx={{
+                        boxShadow: "inset 0px 0px 2px 2px gray",
+                      }}
+                    />
+                  </Box>
                 </Grid>
               </Grid>
               <Box p={1}>
                 Sect:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {CITIZENSHIP.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -192,11 +272,15 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 language:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {LANGUAGE.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -208,11 +292,15 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 occupation:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {OCCUPATION.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -224,11 +312,15 @@ const AdvanceSearch = () => {
               </Box>
               <Box p={1}>
                 State:
-                <FormControl sx={{width:{md:300,sm:300,xs:250}}}>
+                <FormControl sx={{ width: { md: 300, sm: 300, xs: 250 } }}>
                   <Select
                     size="small"
                     input={<OutlinedInput />}
-                    sx={{ border: "2px solid white", color: "black" }}
+                    sx={{
+                      border: "2px solid white",
+                      color: "black",
+                      boxShadow: "inset 0px 0px 2px 2px gray",
+                    }}
                   >
                     {STATE_LIST.map((name) => (
                       <MenuItem key={name} value={name}>
@@ -244,25 +336,29 @@ const AdvanceSearch = () => {
             <Grid item md={4}>
               Show:{" "}
               <FormControlLabel
-                control={<Checkbox defaultChecked sx={{color:COLORS.primary.main}}/>}
+                control={
+                  <Checkbox
+                    defaultChecked
+                    sx={{ color: COLORS.primary.main }}
+                  />
+                }
                 label="Profile with Phtoto"
-                
               />
             </Grid>
             <Grid item md={4}>
               <FormControlLabel
-                control={<Checkbox sx={{color:COLORS.primary.main}}/>}
+                control={<Checkbox sx={{ color: COLORS.primary.main }} />}
                 label="Featured by Fimily"
               />
             </Grid>
             <Grid item md={4}>
               <FormControlLabel
-                control={<Checkbox sx={{color:COLORS.primary.main}}/>}
+                control={<Checkbox sx={{ color: COLORS.primary.main }} />}
                 label="Featured by Profile only"
               />
             </Grid>
           </Grid>
-          <CustomizeButton title="Search"/>
+          <CustomizeButton title="Search" />
         </Container>
       </Box>
     </div>

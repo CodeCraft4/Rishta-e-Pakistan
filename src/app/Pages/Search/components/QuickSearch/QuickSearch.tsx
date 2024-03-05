@@ -34,6 +34,7 @@ const QuickSearch = () => {
             sx={{
               borderRadius: "none",
               border: "none",
+              boxShadow: "inset 0px 0px 3px 2px gray",
             }}
           />
           <Button
