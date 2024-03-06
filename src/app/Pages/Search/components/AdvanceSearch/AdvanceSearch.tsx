@@ -24,26 +24,35 @@ import {
   STATE_LIST,
   CITIZENSHIP,
 } from "@/constant/content";
+// import Image from "next/image";
 import CustomizeButton from "@/components/Button/Button";
 
 const AdvanceSearch = () => {
   return (
     <div>
       <Box pt={15} pb={25} textAlign={"center"}>
-        <Typography
+        {/* <Image 
+        src="https://wedding-wonders.bugfinder.net/assets/uploads/content/63425fd5595131665294293.png" 
+        alt="img"
+        width={400}
+        height={400}
+        style={{
+          position:"relative"
+        }}
+        /> */}
+        <Container
+          maxWidth="md"
+          sx={{ bgcolor: "white", p: 3, borderRadius: "8px"}}
+        >
+            <Typography
           sx={{
             fontSize: { md: 60, sm: 60, xs: 25 },
             textAlign: "center",
-            fontWeight: "bold",
-            color: COLORS.primary.main,
+            color: 'black',pb:2
           }}
         >
           Advance Search.....
         </Typography>
-        <Container
-          maxWidth="md"
-          sx={{ bgcolor: "white", p: 3, borderRadius: "8px" }}
-        >
           <Grid
             container
             spacing={3}
@@ -54,7 +63,7 @@ const AdvanceSearch = () => {
             }}
           >
             <Grid item md={6} sm={6} xs={12}>
-              <Grid container spacing={1}>
+              <Grid container spacing={1} p={2}>
                 <Grid
                   item
                   md={6}
@@ -79,6 +88,9 @@ const AdvanceSearch = () => {
                       value={"18"}
                       sx={{
                         boxShadow: "inset 0px 0px 2px 2px gray",
+                        "&::focus":{
+                          border:`2px solid ${COLORS.secondary.main}`
+                        }
                       }}
                     />
                   </Box>
@@ -91,10 +103,10 @@ const AdvanceSearch = () => {
                   >
                     <Typography fontWeight={"bold"}>To:</Typography>
                     <TextField
-                      placeholder="from"
+                      placeholder="to"
                       type="number"
                       size="small"
-                      value={"50"}
+                      fullWidth
                       sx={{
                         boxShadow: "inset 0px 0px 2px 2px gray",
                       }}
@@ -204,12 +216,12 @@ const AdvanceSearch = () => {
               </Box>
             </Grid>
             <Grid item md={6} sm={6} xs={12}>
-              <Grid container spacing={1}>
+              <Grid container spacing={1} p={2}>
                 <Grid
                   item
                   md={6}
                   sm={6}
-                  xs={6}
+                  xs={7}
                   sx={{
                     display: "flex",
                     alignItems: "center",
@@ -232,7 +244,7 @@ const AdvanceSearch = () => {
                     />
                   </Box>
                 </Grid>
-                <Grid item md={6} sm={6} xs={6}>
+                <Grid item md={6} sm={6} xs={5}>
                   <Box
                     sx={{
                       display: { md: "block", sm: "block", xs: "flex" },

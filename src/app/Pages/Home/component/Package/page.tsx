@@ -17,21 +17,10 @@ const PackageCard = () => {
             textAlign: "center",
             fontFamily: "fantasy",
             p: 2,
-            fontSize: { md: 80, sm: 60, xs: 50 },
+            fontSize: { md: 60, sm: 60, xs: 50 },
           }}
         >
           PACKAGE
-        </Typography>
-        <Typography
-          sx={{
-            textAlign: "center",
-            color: COLORS.dark.main,
-            fontSize: 13,
-            fontStyle: "italic",
-          }}
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit id cupiditate.
-          Repudiandae blanditiis ullam natus quas explicabook.
         </Typography>
         <Container maxWidth="lg" sx={{ mt: 10 }}>
           <Grid container spacing={5}>

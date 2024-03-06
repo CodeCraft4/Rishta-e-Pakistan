@@ -6,13 +6,13 @@ import { COLORS } from "@/constant/color";
 const QuickSearch = () => {
   return (
     <div>
-      <Typography fontSize={{ md: 60, sm: 40, xs: 30 }} fontWeight={"bold"} color={COLORS.primary.main}>
+      <Typography fontSize={{ md: 60, sm: 40, xs: 30 }} color="white">
         Quick Search...
       </Typography>
       <Container
         maxWidth="md"
         sx={{
-           bgcolor: "white",
+           bgcolor: "transparent",
             p: 3,
             borderRadius: "8px",
             border:`1px solid ${COLORS.primary.main}`
@@ -28,11 +28,10 @@ const QuickSearch = () => {
           }}
         >
           <TextField
-            placeholder="Enter Full Name"
+            placeholder="Search by Name and ID"
             fullWidth
             type="search"
             sx={{
-              borderRadius: "none",
               border: "none",
               boxShadow: "inset 0px 0px 3px 2px gray",
             }}
@@ -42,9 +41,9 @@ const QuickSearch = () => {
             sx={{
               borderRadius: "0px 5px 5px 0px",
               ml: -1,
-              bgcolor: "gray",
+              bgcolor: "black",
               "&:hover": {
-                bgcolor: "black",
+                bgcolor: "gray",
               },
             }}
           >

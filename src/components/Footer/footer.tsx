@@ -21,7 +21,7 @@ import { COLORS } from "@/constant/color";
 const Footer = () => {
   return (
     <div>
-      <Box sx={{ bgcolor: "#bdbdbd" }}>
+      <Box sx={{ bgcolor: "#bdbdbd" ,mt:5}}>
         <Container maxWidth="lg">
           <Grid container spacing={3} sx={{ pt: 8 }}>
             <Grid item md={3} sm={6} xs={12}>

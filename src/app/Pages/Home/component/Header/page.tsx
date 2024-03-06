@@ -55,7 +55,7 @@ const Header = () => {
           <Container maxWidth="lg">
             <Grid container spacing={2}>
               <Grid item md={6} sm={6} xs={12} sx={{ color: "white" }}>
-                <Typography sx={{ fontSize: { md: 60, sm: 40, xs: 30 } }}>
+                <Typography sx={{ fontSize: { md: 50, sm: 30, xs: 30 } }}>
                   Find Your Perfect Soul Mate!
                 </Typography>
                 <Typography sx={{ fontSize: { md: 15, sm: 15, xs: 12 } }}>

@@ -79,7 +79,7 @@ const Resizable = () => {
           sx={{
             textAlign: "center",
             fontFamily: "fantasy",
-            fontSize: { md: 80, sm: 60, xs: 50 },
+            fontSize: { md: 60, sm: 60, xs: 50 },
           }}
         >
           MERRAGE PROPOSAL

@@ -2,13 +2,28 @@ import React from 'react'
 import AdvanceSearch from '../components/AdvanceSearch/AdvanceSearch'
 import QuickSearch from '../components/QuickSearch/QuickSearch'
 import { Box } from '@mui/material'
+import Image from "next/image";
 import { COLORS } from '@/constant/color'
 
 const SearchContainer = () => {
   return (
     <div>
-       <Box bgcolor={COLORS.dark.main} pt={{md:15,sm:10,xs:15}} textAlign={"center"}>
+       <Box textAlign={"center"} position={"relative"} bgcolor={COLORS.dark.main}>
+        <Image 
+         src="https://wedding-wonders.bugfinder.net/assets/uploads/blog/thumb_6342cd9ad5fee1665322394.jpg"
+         width={100}
+         height={647}
+         style={{
+           width: "100%",
+           filter: "brightness(30%)",
+           objectFit: "cover",
+         }}
+        alt="bgImg"/>
+        <Box
+        sx={{position:"absolute",top:"10%",width:"100%"}}
+        >
       <QuickSearch/>
+        </Box>
       <AdvanceSearch/>
       </Box>
     </div>

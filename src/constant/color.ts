@@ -6,6 +6,6 @@ export const COLORS = {
     main: '#bdbdbd',
   },
   dark:{
-    main:"gray",
+    main:"#d7ccc8",
   }
 };

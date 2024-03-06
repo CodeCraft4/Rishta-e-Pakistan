@@ -72,8 +72,7 @@ const PremiumMember =()=> {
          style={{position:"absolute",marginLeft:'-10%',filter:"opacity(60%)"}}
          />
          <Box>
-        <Typography variant="h1" sx={{textAlign:"center",fontFamily:"fantasy",p:2,fontSize:{md:80,sm:60,xs:50}}}>Premium Members</Typography>
-        <Typography sx={{textAlign:"center",color:COLORS.dark.main,fontSize:13,fontStyle:"italic"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit id cupiditate. Repudiandae blanditiis ullam natus quas explicabook.</Typography>
+        <Typography variant="h1" sx={{textAlign:"center",fontFamily:"fantasy",p:2,fontSize:{md:60,sm:60,xs:50}}}>Premium Members</Typography>
         <Slider {...settings}>
                 {PREMIUM_MEMBERS.map((item)=>(
                     <Box key={item.profileImg} sx={{p:3,mt:8,textAlign:'center'}}>

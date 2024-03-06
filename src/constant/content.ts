@@ -332,3 +332,44 @@ export const CITIZENSHIP=[
     "Belarusian",
     "Belgian",
 ]
+
+
+// Featured Profile
+export const FEATURED_PROFILE=[
+    {
+        profileImg:'https://wedding-wonders.bugfinder.net/assets/uploads/users/6363b2dbe5dd01667478235.jpg',
+        name:"Amelia Emma",
+        age:18,
+        height:2.6,
+        religion:"Muslim",
+        country:"Pakistan",
+        mStatus:"Married",
+        education:"FSC",
+        profession:"doctor",
+        about:"alaam, i am a masters in engineering graduate wor"
+    },
+    {
+        profileImg:'https://wedding-wonders.bugfinder.net/assets/uploads/users/63591ac70539e1666783943.jpg',
+        name:"Hanry Nyra",
+        age:22,
+        height:2.3,
+        religion:"Cristian",
+        country:"America",
+        mStatus:"Married",
+        education:"BS",
+        profession:"Engineer",
+        about:"Salaam, i am a masters in engineering graduate wor"
+    },
+    {
+        profileImg:'https://wedding-wonders.bugfinder.net/assets/uploads/users/63578f656d0ce1666682725.jpg',
+        name:"Sarena Nayra",
+        age:23,
+        height:2.2,
+        religion:"Muslim",
+        country:"India",
+        mStatus:"unmarried",
+        education:"BSN",
+        profession:"Nursing",
+        about:"Salaam, i am a masters in engineering graduate work..."
+    },
+]
