@@ -10,14 +10,14 @@ const Stories = () => {
          sx={{position:"relative"}}
       >
         <Image
-        src={'https://wedding-wonders.bugfinder.net/assets/uploads/story/thumb_63480056b7f0c1665663062.jpg'}
+        src={'https://images.pexels.com/photos/169186/pexels-photo-169186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
         width={100}
         height={450}
-        style={{width:"100%",objectFit:"cover",filter:'brightness(50%)'}}
+        style={{width:"100%",objectFit:"cover",filter:'brightness(40%)'}}
          alt="Img"
          />
          <Box
-         sx={{position:"absolute",top:"20%",width:"100%"}}
+         sx={{position:"absolute",top:"15%",width:"100%"}}
          >
           <Typography
           sx={{

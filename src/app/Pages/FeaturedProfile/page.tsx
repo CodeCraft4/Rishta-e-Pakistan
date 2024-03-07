@@ -13,7 +13,7 @@ const page = () => {
        }}
        >
        <Image
-       src={"https://wedding-wonders.bugfinder.net/assets/uploads/blog/thumb_6342cd9ad5fee1665322394.jpg"}
+       src={"https://images.pexels.com/photos/169186/pexels-photo-169186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
         alt="bgImg"
         width={100}
         height={647}

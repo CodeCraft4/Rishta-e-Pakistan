@@ -34,7 +34,7 @@ const Header = () => {
       >
         <Image
           src={
-            "https://wedding-wonders.bugfinder.net/assets/uploads/blog/thumb_6342cd9ad5fee1665322394.jpg"
+            "https://images.pexels.com/photos/169186/pexels-photo-169186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           }
           width={100}
           height={647}
@@ -96,10 +96,16 @@ const Header = () => {
                   >
                     Search Members
                   </Typography>
-                  <FormControl
-                    sx={{ p: { md: 6, sm: 6, xs: 2 }, color: "white" }}
-                  >
-                    <RadioGroup
+                    <Grid container>
+                      <Grid
+                       item
+                          md={12}
+                          p={3}
+                          textAlign="start"
+                          fontWeight="bold"
+                          color="white"
+                          >
+                          <RadioGroup
                       aria-labelledby="demo-radio-buttons-group-label"
                       defaultValue="male"
                       name="radio-buttons-group"
@@ -124,37 +130,28 @@ const Header = () => {
                         />
                       </Box>
                     </RadioGroup>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        color: "white",
-                        alignItems: "center",
-                      }}
-                    >
-                      Age:
-                      <TextField
-                        size="small"
-                        type="number"
-                        sx={{
-                          border: "2px solid white",
-                          borderRadius: "4px",
-                          color: "white",
-                        }}
-                        placeholder={"18"}
-                      />
-                      to:
-                      <TextField
-                        size="small"
-                        type="number"
-                        sx={{
-                          border: "2px solid white",
-                          borderRadius: "4px",
-                          color: "white",
-                        }}
-                        placeholder={"50"}
-                      />
-                    </Box>
-                    <Box
+                      <Grid container spacing={1}>
+                        <Grid item md={6} sm={6} xs={12}>
+                          Age:
+                          <TextField
+                          size="small"
+                          type="number"
+                          value={18}
+                          sx={{ border: "2px solid white", color: "white",borderRadius:1 }}
+
+                              />
+                        </Grid>
+                        <Grid item md={6} sm={6} xs={12}>
+                        To:
+                          <TextField 
+                          size="small" 
+                          type="number"
+                           value={50}
+                          sx={{ border: "2px solid white", color: "white",borderRadius:1 }}
+                            />
+                        </Grid>
+                      </Grid>
+                      <Box
                       sx={{
                         display: "flex",
                         color: "white",
@@ -181,25 +178,38 @@ const Header = () => {
                         </Select>
                       </FormControl>
                     </Box>
-                    Country:
-                    <FormControl sx={{ width: { md: 300,sm:280,xs:250 } }}>
-                      <Select
-                        size="small"
-                        input={<OutlinedInput/>}
-                        sx={{ border: "2px solid white", color: "white" }}
-                      >
-                        {COUNTRY_DROPDOWN.map((name) => (
-                          <MenuItem
-                            key={name}
-                            value={name}
-                          >
-                            {name}
-                          </MenuItem>
-                        ))}
-                      </Select>
-                    </FormControl>
-                    <CustomizeButton title={"Search"} />
-                  </FormControl>
+                    
+                      <Box
+                      sx={{
+                        display: "flex",
+                        color: "white",
+                        alignItems: "center",
+                        mt: 2,
+                        mx: 6,
+                      }}
+                    >
+                      Country:
+                      <FormControl sx={{ width: { md: 200,sm:150,xs:100 } }}>
+                        <Select
+                          size="small"
+                          fullWidth
+                          input={<OutlinedInput/>}
+                          sx={{ border: "2px solid white", color: "white" }}
+                        >
+                          {COUNTRY_DROPDOWN.map((name) => (
+                            <MenuItem
+                              key={name}
+                              value={name}
+                            >
+                              {name}
+                            </MenuItem>
+                          ))}
+                        </Select>
+                      </FormControl>
+                    </Box>
+                      <CustomizeButton title="Search"/>
+                      </Grid>
+                    </Grid>
                 </Card>
               </Grid>
             </Grid>
