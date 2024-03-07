@@ -2,13 +2,14 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
 import FPMember from './components/Members/FPMember'
+import { COLORS } from './../../../constant/color';
 
 const page = () => {
   return (
     <div>
        <Box
        sx={{
-        position:'relative'
+        position:'relative',
        }}
        >
        <Image

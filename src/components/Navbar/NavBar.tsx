@@ -20,6 +20,7 @@ import {
 } from "@mui/icons-material";
 import { COLORS } from "@/constant/color";
 import styles from "./navbar.module.css";
+import { usePathname } from "next/navigation";
 
 
 const drawerWidth = 200;
@@ -41,60 +42,110 @@ export default function DrawerAppBar() {
     window.addEventListener("scroll", changeBgColor);
   }
 
+  const pathname = usePathname();
+
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center",boxShadow:"inset 0px 0px 134px 8px #00695c",height:"100vh"}}>
       <Typography variant="h6" sx={{ my: 2 }}>
         Rishta Pakistan
       </Typography>
       <Divider />
       <List>
-        <ListItem>
-          <Link
-            href={"/Pages/Home"}
-            style={{ color: "black", textDecoration: "none" }}
+      <ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Home" ? "red" : "black",
+                textDecoration: pathname === "/Pages/Home" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Home" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            Home
-          </Link>
+            <Link href={"/Pages/Home"}> Home </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href={"/Pages/Search"}
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Search" ? "red" : "black",
+                textDecoration: pathname === "/Pages/Search" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Search" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            Search
-          </Link>
+            <Link href={"/Pages/Search"}> Search </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href={"/Pages/Profile"}
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Profile" ? "red" : "black",
+                textDecoration: pathname === "/Pages/Profile" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Profile" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            LatestProfile
-          </Link>
+            <Link href={"/Pages/Profile"}> LatestProfile </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href={"/Pages/FeaturedProfile"}
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/FeaturedProfile" ? "red" : "black",
+                textDecoration: pathname === "/Pages/FeaturedProfile" ? "underline": "none",
+                fontWeight: pathname === "/Pages/FeaturedProfile" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            FeaturedProfile
-          </Link>
+            <Link href={"/Pages/FeaturedProfile"}> FeaturedProfile </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href={"/Pages/Stories"}
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Stories" ? "red" : "black",
+                textDecoration: pathname === "/Pages/Stories" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Stories" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            SuccessStories
-          </Link>
+            <Link href={"/Pages/Stories"}> SuccessStories </Link>
+          </Box>
         </ListItem>
         <ListItem>
-          <Link
-            href={"/Pages/Donate"}
-            style={{ color: "black", textDecoration: "none" }}
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Donate" ? "red" : "black",
+                textDecoration: pathname === "/Pages/Donate" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Donate" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
           >
-            Donate
-          </Link>
+            <Link href={"/Pages/Donate"}> Donate </Link>
+          </Box>
         </ListItem>
       </List>
     </Box>
@@ -136,54 +187,105 @@ export default function DrawerAppBar() {
               />
             </Box>
             <List sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
+            <ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Home" ? "red" : "white",
+                textDecoration: pathname === "/Pages/Home" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Home" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/Pages/Home"}> Home </Link>
+          </Box>
+        </ListItem>
               <ListItem>
-                <Link
-                  href={"/Pages/Home"}
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  Home
-                </Link>
-              </ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Search" ? "red" : "white",
+                textDecoration: pathname === "/Pages/Search" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Search" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/Pages/Search"}> Search </Link>
+          </Box>
+        </ListItem>
               <ListItem>
-                <Link
-                  href={"/Pages/Search"}
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  Search
-                </Link>
-              </ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Profile" ? "red" : "white",
+                textDecoration: pathname === "/Pages/Profile" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Profile" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/Pages/Profile"}> LatestProfile </Link>
+          </Box>
+        </ListItem>
               <ListItem>
-                <Link
-                  href={"/Pages/Profile"}
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  LatestProfile
-                </Link>
-              </ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/FeaturedProfile" ? "red" : "white",
+                textDecoration: pathname === "/Pages/FeaturedProfile" ? "underline": "none",
+                fontWeight: pathname === "/Pages/FeaturedProfile" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/Pages/FeaturedProfile"}> FeaturedProfile </Link>
+          </Box>
+        </ListItem>
               <ListItem>
-                <Link
-                  href={"/Pages/FeaturedProfile"}
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  FeaturedProfile
-                </Link>
-              </ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Stories" ? "red" : "white",
+                textDecoration: pathname === "/Pages/Stories" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Stories" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/Pages/Stories"}> SuccessStories </Link>
+          </Box>
+        </ListItem>
               <ListItem>
-                <Link
-                  href={"/Pages/Stories"}
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  SuccessStories
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link
-                  href={"/Pages/Donate"}
-                  style={{ color: "white", textDecoration: "none" }}
-                >
-                  Donate
-                </Link>
-              </ListItem>
+          <Box
+            sx={{
+              "& a": {
+                color: pathname === "/Pages/Donate" ? "red" : "white",
+                textDecoration: pathname === "/Pages/Donate" ? "underline": "none",
+                fontWeight: pathname === "/Pages/Donate" ? "bold": "lighter",
+                "&:hover": {
+                  color: "red",
+                },
+              },
+            }}
+          >
+            <Link href={"/Pages/Donate"}> Donate </Link>
+          </Box>
+        </ListItem>
+
+
+
             </List>
             <List className={styles.dropdown}>
               <Typography>

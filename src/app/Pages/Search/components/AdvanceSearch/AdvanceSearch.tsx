@@ -24,22 +24,12 @@ import {
   STATE_LIST,
   CITIZENSHIP,
 } from "@/constant/content";
-// import Image from "next/image";
 import CustomizeButton from "@/components/Button/Button";
 
 const AdvanceSearch = () => {
   return (
     <div>
       <Box pt={15} pb={25} textAlign={"center"}>
-        {/* <Image 
-        src="https://wedding-wonders.bugfinder.net/assets/uploads/content/63425fd5595131665294293.png" 
-        alt="img"
-        width={400}
-        height={400}
-        style={{
-          position:"relative"
-        }}
-        /> */}
         <Container
           maxWidth="md"
           sx={{ bgcolor: "white", p: 3, borderRadius: "8px"}}

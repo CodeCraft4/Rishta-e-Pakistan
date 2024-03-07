@@ -6,6 +6,9 @@ export const COLORS = {
     main: '#bdbdbd',
   },
   dark:{
-    main:"#d7ccc8",
+    main:"#e0e0e0",
+  },
+  blueLight:{
+    main:"#0277bd"
   }
 };
