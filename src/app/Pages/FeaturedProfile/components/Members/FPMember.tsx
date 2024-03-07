@@ -46,7 +46,7 @@ const FPMember = () => {
                     src={data?.profileImg}
                     width={200}
                     height={200}
-                    style={{ borderRadius: "50%", objectFit: "cover" }}
+                    style={{ borderRadius: "50%", objectFit: "cover",border:`2px solid ${COLORS.blueLight.main}` }}
                     alt="img"
                   />
                   <Typography>
@@ -96,12 +96,13 @@ const FPMember = () => {
         <Pagination
           sx={{
             ".MuiPaginationItem-root": {
-              border: `1px solid ${COLORS.primary.main}`,
+              border: `1px solid ${COLORS.dark.main}`,
+              boxShadow:"inset 0px 0px 14px 3px gray",
               bgcolor: "white",
               "&.Mui-selected": {
                 bgcolor: "black",
                 color: "white",
-                // "&:hover": { bgcolor: "rgb(10%, 10%, 40%)", color: "white" },
+                "&:hover": { bgcolor: "rgb(10%, 10%, 40%)", color: "white" },
               },
 
               "&:hover": { bgcolor: "rgb(254, 141, 241)", color: "white" },
@@ -114,7 +115,7 @@ const FPMember = () => {
           page={user}
           onChange={handleChange}
           variant="outlined"
-          shape="rounded"
+          // shape="rounded"
         />
       </Stack>
       </Box>

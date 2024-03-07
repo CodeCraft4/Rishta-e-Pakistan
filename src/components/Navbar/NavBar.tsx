@@ -59,7 +59,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Home" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Home" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -75,7 +75,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Search" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Search" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -91,7 +91,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Profile" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Profile" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -107,7 +107,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/FeaturedProfile" ? "underline": "none",
                 fontWeight: pathname === "/Pages/FeaturedProfile" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -123,7 +123,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Stories" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Stories" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -139,7 +139,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Donate" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Donate" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -195,7 +195,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Home" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Home" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -211,7 +211,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Search" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Search" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -227,7 +227,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Profile" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Profile" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -243,7 +243,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/FeaturedProfile" ? "underline": "none",
                 fontWeight: pathname === "/Pages/FeaturedProfile" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
@@ -259,12 +259,12 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Stories" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Stories" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}
           >
-            <Link href={"/Pages/Stories"}> SuccessStories </Link>
+            <Link href={"/Pages/Stories"}> Stories </Link>
           </Box>
         </ListItem>
               <ListItem>
@@ -275,7 +275,7 @@ export default function DrawerAppBar() {
                 textDecoration: pathname === "/Pages/Donate" ? "underline": "none",
                 fontWeight: pathname === "/Pages/Donate" ? "bold": "lighter",
                 "&:hover": {
-                  color: "red",
+                  color: "aqua",
                 },
               },
             }}

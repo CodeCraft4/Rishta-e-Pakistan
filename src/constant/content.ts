@@ -480,3 +480,25 @@ export const FEATURED_PROFILE=[
     },
    
 ]
+
+// Stories Cards..
+export const STORY_CARD=[
+    {
+        id:1,
+        img:"https://wedding-wonders.bugfinder.net/assets/uploads/story/63480087048fe1665663111.jpg",
+        name:"Hamil & Smith",
+        placeDate:"Malavi - 08 March, 022",
+    },
+    {
+        id:2,
+        img:"https://wedding-wonders.bugfinder.net/assets/uploads/story/thumb_63480056b7f0c1665663062.jpg",
+        name:"Hussy & Johny",
+        placeDate:"Sydney - 28 Oct, 021",
+    },
+    {
+        id:3,
+        img:"https://wedding-wonders.bugfinder.net/assets/uploads/blog/6342ce253b6591665322533.jpg",
+        name:"Hussy & Prince",
+        placeDate:"Sydney - 20 Sept, 020",
+    },
+]
