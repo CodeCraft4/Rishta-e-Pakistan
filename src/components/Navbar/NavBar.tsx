@@ -177,7 +177,6 @@ export default function DrawerAppBar() {
               width: "100%",
             }}
           >
-            {/* <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}> */}
             <Box>
               <Image
                 src="https://wedding-wonders.bugfinder.net/assets/uploads/logo/logo.png"
@@ -264,7 +263,7 @@ export default function DrawerAppBar() {
               },
             }}
           >
-            <Link href={"/Pages/Stories"}> Stories </Link>
+            <Link href={"/Pages/Stories"}> SuccessStories </Link>
           </Box>
         </ListItem>
               <ListItem>

@@ -28,10 +28,14 @@ const Header = () => {
       <Box
         sx={{
           position: "relative",
-          height: { md: 647, sm: 647, xs: 800 },
+          height: { md: 648, sm: 647, xs: 800 },
           bgcolor: COLORS.dark.main,
         }}
       >
+        <Box
+        height={{md:648,sm:648,xs:900}}
+        bgcolor={COLORS.dark.main}
+        >
         <Image
           src={
             "https://images.pexels.com/photos/169186/pexels-photo-169186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -45,6 +49,7 @@ const Header = () => {
           }}
           alt="headerImg"
         />
+        </Box>
         <Box
           sx={{
             position: "absolute",
@@ -80,9 +85,9 @@ const Header = () => {
                 <Card
                   sx={{
                     border: `1px solid ${COLORS.primary.main}`,
-                    height: "400px",
+                    height: {md:'400px',sm:'400px',xs:'460px'},
                     width: { md: "70%", sm: "100%", xs: "100%" },
-                    bgcolor: "transparent",
+                    bgcolor: {md:"transprent",sm:"transparent",xs:COLORS.secondary.main},
                     textAlign: "center",
                     borderRadius: "8px",
                   }}

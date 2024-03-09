@@ -57,8 +57,9 @@ const Resizable = () => {
           display: display ? "block" : "none",
           padding: "10px",
           position: "relative",
-          background: "#e0e0e0",
+          // background: "#e0e0e0",
           height: "550px",
+          marginTop:"10%"
         }}
       >
         <Image
