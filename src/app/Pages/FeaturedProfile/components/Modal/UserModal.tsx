@@ -58,7 +58,8 @@ export default function BasicModal() {
            height={150}
            style={{
             borderRadius:"50%",
-            objectFit:"cover"
+            objectFit:"cover",
+            zIndex:999,
            }}
             alt="userImg"/>
             <Typography p={1}>Amelia Emma</Typography>
@@ -137,7 +138,7 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '70%',
+    width: '80%',
     bgcolor: 'background.paper',
     boxShadow: 24,
     borderRadius:1,
