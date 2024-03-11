@@ -53,7 +53,7 @@ export default function BasicModal() {
           }}
           >
            <Image
-           src="http://localhost:3001/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F6363b2dbe5dd01667478235.jpg&w=256&q=75"
+           src="http://localhost:3001/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F6363b2dbe5dd01667478235.jpg&w=640&q=75"
            width={150}
            height={150}
            style={{
@@ -70,6 +70,7 @@ export default function BasicModal() {
               <Typography
               fontWeight="bold"
               fontSize={20}
+              textAlign={"start"}
               >Personal Info.</Typography>
               <Typography>Gender : Female</Typography>
             <Typography>Height : 2.6</Typography>
@@ -83,10 +84,11 @@ export default function BasicModal() {
               <Typography
               fontWeight="bold"
               fontSize={20}
+              textAlign={"start"}
               >Description</Typography>
               <Typography
             sx={{
-              width:"60%",
+              width:{md:'60%',sm:'60%',xs:"100%"},
               display:"flex",
               justifyContent:"center",
               m:'auto',
@@ -134,7 +136,7 @@ export default function BasicModal() {
 
 
 const style = {
-    position: 'absolute' as 'absolute',
+    position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
