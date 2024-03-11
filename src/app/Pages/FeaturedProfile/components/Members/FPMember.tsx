@@ -3,9 +3,9 @@ import React from "react";
 import { Box, Grid, Container, Typography, Stack, Pagination } from "@mui/material";
 import { FEATURED_PROFILE } from "@/constant/content";
 import Image from "next/image";
-import Link from "next/link";
 import Search from '../SearchMember/Search'
 import { COLORS } from "@/constant/color";
+import BasicModal from "../Modal/UserModal";
 
 
 
@@ -83,11 +83,13 @@ const FPMember = () => {
                     <b style={{color:COLORS.blueLight.main}}>Profession:</b>
                     {data?.profession}
                   </Typography>
-                  <Typography>
+                  <Box display={'flex'}>
+                  <Typography >
                     <b style={{color:COLORS.blueLight.main}}>About:</b>
                     {data?.about} 
-                    <Link href="/Pages/Stories">More..</Link>
                     </Typography>
+                    <BasicModal/>
+                  </Box>
                 </Box>
               </Box>
             ))}
