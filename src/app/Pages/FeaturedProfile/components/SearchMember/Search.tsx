@@ -20,7 +20,7 @@ const Search = () => {
   return (
     <div>
       <Box boxShadow={`3px 4px 23px ${COLORS.secondary.main}`} mt={4} bgcolor={"white"}>
-          <Grid container spacing={2} p={{md:5,sm:1,xs:2}} border={`1px solid ${COLORS.secondary.main}`}>
+          <Grid container spacing={2} p={{md:5,sm:1,xs:2}} border={{md:`1px solid ${COLORS.secondary.main}`,xs:'none'}}>
             <Grid item md={6} sm={6} xs={6}>
             <Typography fontWeight={"bold"}>Age:</Typography>
                     <TextField
