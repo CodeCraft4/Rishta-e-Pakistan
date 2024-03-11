@@ -10,6 +10,7 @@
     backface-visibility: hidden;
     filter: brightness(80%);
     object-fit: cover;
+    width:100%,
   }
   
   .contents {
