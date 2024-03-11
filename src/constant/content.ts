@@ -499,7 +499,7 @@ export const STORIES = [
     id: 1,
     poster:
       "https://images.pexels.com/photos/2852135/pexels-photo-2852135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    couple: "Mrs.Hemalin & Mr.Smith",
+    couple: "Hemalin & Smith",
     placeDate: "Sydney - 08 Jan,2016",
     title:
       "I don't care how many people are in this world I want you end Of story.",
@@ -517,7 +517,7 @@ export const STORIES = [
     id: 2,
     poster:
       "https://images.pexels.com/photos/13147417/pexels-photo-13147417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    couple: "Mrs.Hemalin $ Mr.Smith",
+    couple: "Hemalin $ Smith",
     placeDate: "Malavi - 08 Jan,2016",
     title:
       "I don't care how many people are in this world I want you end Of story.",
@@ -535,7 +535,7 @@ export const STORIES = [
     id: 3,
     poster:
       "https://images.pexels.com/photos/3585806/pexels-photo-3585806.jpeg?auto=compress&cs=tinysrgb&w=600",
-    couple: "Mrs.Hemalin & Mr.Smith",
+    couple: "Hemalin & Smith",
     placeDate: "NewYork - 08 Jan,2016",
     title:
       "I don't care how many people are in this world I want you end Of story.",

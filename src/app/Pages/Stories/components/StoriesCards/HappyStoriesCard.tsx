@@ -18,10 +18,10 @@ const HappyStories = () => {
       </Typography>
       <Container maxWidth="lg">
         <Grid container spacing={3} px={{ md: 2 }}>
-          {STORIES.map((story, i) => (
+          {STORIES.map((data, i) => (
             <Grid item md={4} sm={6} xs={12} key={i}>
               <Link
-                href={`/Pages/Stories/${story?.id}`}
+                href={`/Pages/Stories/${data?.id}`}
                 className={styles.container}
                 style={{
                   display: "flex",
@@ -34,15 +34,15 @@ const HappyStories = () => {
                   width={340}
                   height={240}
                   className={styles.image}
-                  src={story?.poster}
+                  src={data?.poster}
                   alt="nature"
                 />
                 <div className={styles.contents}>
                   <Typography fontSize={"1.3rem"} fontWeight={"bold"} fontStyle={"italic"}>
-                    {story?.couple} 
+                    {data?.couple} 
                   </Typography>
                   <Typography mt={1} >
-                    {story?.placeDate}
+                    {data?.placeDate}
                   </Typography>
                 </div>
               </Link>

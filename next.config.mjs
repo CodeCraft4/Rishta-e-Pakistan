@@ -7,6 +7,7 @@ const nextConfig = {
       "soul-sanctuary.netlify.app",
       "localhost",
       "images.pexels.com",
+      
     ],
   },
 };

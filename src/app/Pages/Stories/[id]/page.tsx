@@ -20,9 +20,9 @@ const SingleStory = ({ params }: any) => {
       </Box>
       <Box bgcolor={COLORS.dark.main}>
         <Container maxWidth="md">
-          {STORIES.map((story, i) => (
+          {STORIES.map((items, i) => (
             <Box key={i}>
-              {story?.id == params.id && (
+              {items?.id == params.id && (
                 <Box>
                   <Typography
                     textAlign={"center"}
@@ -30,7 +30,7 @@ const SingleStory = ({ params }: any) => {
                     fontWeight={"bold"}
                     py={{ md: 7, sm: 4, xs: 3 }}
                   >
-                    {story?.title}
+                    {items?.title}
                   </Typography>
                   <Typography
                     textAlign={"center"}
@@ -38,7 +38,7 @@ const SingleStory = ({ params }: any) => {
                     fontWeight={"bold"}
                     pb={2}
                   >
-                    {story?.postBy}
+                    {items?.postBy}
                   </Typography>
                   <Box
                     width={{ md: "100%" }}
@@ -49,12 +49,12 @@ const SingleStory = ({ params }: any) => {
                     <Image
                       fill
                       style={{ objectFit: "cover" }}
-                      src={story?.poster}
+                      src={items?.poster}
                       alt="nature"
                     />
                   </Box>
                   <Typography pt={2} pb={{ md: 10 }}>
-                    {story?.details}
+                    {items?.details}
                   </Typography>
                   <Typography
                     fontSize={{ md: "3rem", sm: "2rem", xs: "1.5rem" }}
@@ -93,8 +93,8 @@ const SingleStory = ({ params }: any) => {
   );
 };
 export async function generateMetadata({ param }: any) {
-  // STORIES.map((story, i) => ({
-  //   title: `${story?.mPartnerName} & ${story?.fePartnerName}`,
+  // STORIES.map((items, i) => ({
+  //   title: `${items?.mPartnerName} & ${story?.fePartnerName}`,
   // }));
 }
 export default SingleStory;
