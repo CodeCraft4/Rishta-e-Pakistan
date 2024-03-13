@@ -1,33 +1,35 @@
-"use client"
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import Modal from '@mui/material/Modal';
+import * as React from "react";
+import Backdrop from "@mui/material/Backdrop";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
+import Typography from "@mui/material/Typography";
+import {Container, Grid } from "@mui/material";
+import Image from "next/image";
 import { COLORS } from "@/constant/color";
-import Image from 'next/image'
-import { Facebook, Pinterest, Twitter, } from '@mui/icons-material';
+import { Facebook, Pinterest, Twitter,Instagram, LinkedIn } from "@mui/icons-material";
 
 
 
-export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+const UserInfoModal = (props: any) => {
+  const { userInformation, userInfoModal, CloseModal } = props;
 
   return (
     <div>
-      <Typography sx={{
-        color:COLORS.blueLight.main,
-        cursor:"pointer"
-      }} onClick={handleOpen}>More...</Typography>
       <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={userInfoModal}
+        onClose={CloseModal}
+        closeAfterTransition
+        slots={{ backdrop: Backdrop }}
+        slotProps={{
+          backdrop: {
+            timeout: 500,
+          },
+        }}
       >
+        <Fade in={userInfoModal}>
         <Box sx={style}>
           <Box
           sx={{
@@ -38,6 +40,7 @@ export default function BasicModal() {
           src="https://images.pexels.com/photos/3516751/pexels-photo-3516751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           width={150}
           height={150}
+          
           style={{
             width:'100%',
             objectFit:"cover",
@@ -53,7 +56,7 @@ export default function BasicModal() {
           }}
           >
            <Image
-           src="http://localhost:3001/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F6363b2dbe5dd01667478235.jpg&w=640&q=75"
+           src={userInformation.profileImg}
            width={150}
            height={150}
            style={{
@@ -63,28 +66,27 @@ export default function BasicModal() {
            }}
             alt="userImg"/>
             <Typography p={1}>Amelia Emma</Typography>
-            <Typography><b style={{color:COLORS.blueLight.main}}>Age:</b> 18</Typography>
+            <Typography><b style={{color:COLORS.blueLight.main}}>Age:</b> {userInformation.age}</Typography>
              <Container maxWidth="md" >
             <Grid container spacing={2} sx={{mt:4}}>
               <Grid item md={6} sm={6} xs={12}>
               <Typography
               fontWeight="bold"
               fontSize={20}
-              textAlign={"start"}
+              textAlign={"center"}
               >Personal Info.</Typography>
-              <Typography>Gender : Female</Typography>
-            <Typography>Height : 2.6</Typography>
-            <Typography>Religion : Muslim</Typography>
-            <Typography>Country : Pakistani</Typography>
-            <Typography>Education : FSC</Typography>
-            <Typography>Profession : Doctor</Typography>
-            <Typography>Martial Status : Married</Typography>
+            <Typography>Height : {userInformation.height}</Typography>
+            <Typography>Religion : {userInformation.religion}</Typography>
+            <Typography>Country : {userInformation.country}</Typography>
+            <Typography>Education : {userInformation.education}</Typography>
+            <Typography>Profession : {userInformation.profession}</Typography>
+            <Typography>Martial Status : {userInformation.mStatus}</Typography>
               </Grid>
               <Grid item md={6} sm={6} xs={12}>
               <Typography
               fontWeight="bold"
               fontSize={20}
-              textAlign={"start"}
+              textAlign={"center"}
               >Description</Typography>
               <Typography
             sx={{
@@ -125,26 +127,57 @@ export default function BasicModal() {
                 }
                }}
               />
+              <Instagram fontSize="large"
+               sx={{
+                opacity:.5,
+                "&:hover":{
+                  opacity:1
+                }
+               }}
+              />
+              <LinkedIn fontSize="large"
+               sx={{
+                opacity:.5,
+                "&:hover":{
+                  opacity:1
+                }
+               }}
+              />
             </Box>
             </Box>
             </Box>
         </Box>
+        </Fade>
       </Modal>
     </div>
   );
-}
+};
+
+export default UserInfoModal;
 
 
 const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '80%',
-    bgcolor: 'background.paper',
-    boxShadow: 24,
-    borderRadius:1,
-    textAlign:"center",
-    height:400,
-    overflowY: 'scroll',
-  };
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: { md: "80%", xs: "90%" },
+  height: "85%",
+  bgcolor: 'background.paper',
+  boxShadow: 24,
+  borderRadius:1,
+  textAlign:"center",
+  overflowY: 'scroll',
+};
+// const style = {
+//   position: "absolute",
+//   top: "50%",
+//   left: "50%",
+//   transform: "translate(-50%, -50%)",
+//   height: "85%",
+//  
+//   border: "2px solid #000",
+//   boxShadow: 24,
+//   p: 4,
+//   overflowY: "scroll",
+// };

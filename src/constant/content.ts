@@ -349,6 +349,7 @@ export const MARTIAL_STATUS = ["Married", "Unmarried", "Divorced"];
 // Featured Profile
 export const FEATURED_PROFILE = [
   {
+    id:1,
     profileImg:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/6363b2dbe5dd01667478235.jpg",
     name: "Amelia Emma",
@@ -362,6 +363,7 @@ export const FEATURED_PROFILE = [
     profession: "doctor",
   },
   {
+    id:2,
     profileImg:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/63591ac70539e1666783943.jpg",
     name: "Hanry Nyra",
@@ -375,6 +377,7 @@ export const FEATURED_PROFILE = [
     profession: "Engineer",
   },
   {
+    id:3,
     profileImg:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/63578f656d0ce1666682725.jpg",
     name: "Sarena Nayra",
@@ -388,6 +391,7 @@ export const FEATURED_PROFILE = [
     profession: "Nursing",
   },
   {
+    id:4,
     profileImg:
       "https://soul-sanctuary.netlify.app/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F6354feea2ea481666514666.jpg&w=256&q=75",
     name: "Saleena ",
@@ -401,6 +405,7 @@ export const FEATURED_PROFILE = [
     profession: "Programming",
   },
   {
+    id:5,
     profileImg:
       "https://soul-sanctuary.netlify.app/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F63578f656d0ce1666682725.jpg&w=256&q=75",
     name: "Sweeti",
@@ -414,6 +419,7 @@ export const FEATURED_PROFILE = [
     profession: "Blogger",
   },
   {
+    id:6,
     profileImg:
       "https://soul-sanctuary.netlify.app/_next/image?url=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1399788030%2Fphoto%2Fportrait-of-young-confident-indian-woman-pose-on-background.webp%3Fb%3D1%26s%3D170667a%26w%3D0%26k%3D20%26c%3D8D_YP_bxKh8CH_W3n0kKr9bzQjZeYxUv9QgqfXjHNX8%3D&w=256&q=75",
     name: "Nayra",
@@ -427,6 +433,7 @@ export const FEATURED_PROFILE = [
     profession: "Teacher",
   },
   {
+    id:7,
     profileImg:
       "http://localhost:3000/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F635e5703126f61667127043.jpg&w=256&q=75",
     name: "Hassan",
@@ -440,6 +447,7 @@ export const FEATURED_PROFILE = [
     profession: "Student",
   },
   {
+    id:8,
     profileImg:
       "http://localhost:3000/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F63d3632f92e4a1674797871.jpg&w=256&q=75",
     name: "Rose",
@@ -453,6 +461,7 @@ export const FEATURED_PROFILE = [
     profession: "doctor",
   },
   {
+    id:9,
     profileImg:
       "http://localhost:3000/_next/image?url=https%3A%2F%2Fwedding-wonders.bugfinder.net%2Fassets%2Fuploads%2Fusers%2F6363b2dbe5dd01667478235.jpg&w=256&q=75",
     name: "Girls",
@@ -466,6 +475,7 @@ export const FEATURED_PROFILE = [
     profession: "Teacher",
   },
   {
+    id:10,
     profileImg:
       "https://soul-sanctuary.netlify.app/_next/image?url=https%3A%2F%2Fplus.unsplash.com%2Fpremium_photo-1689568126014-06fea9d5d341%3Fw%3D600%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MzN8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fHww&w=256&q=75",
     name: "Hussain",
@@ -479,6 +489,7 @@ export const FEATURED_PROFILE = [
     profession: "Student",
   },
   {
+    id:11,
     profileImg:
       "https://wedding-wonders.bugfinder.net/assets/uploads/users/635e5703126f61667127043.jpg",
     name: "Adnan",

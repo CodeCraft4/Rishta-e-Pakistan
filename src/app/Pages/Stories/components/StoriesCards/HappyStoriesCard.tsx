@@ -17,7 +17,7 @@ const HappyStories = () => {
           Happy Stories
       </Typography>
       <Container maxWidth="lg">
-        <Grid container spacing={3} px={{ md: 2 }}>
+        <Grid container spacing={2} px={{ md: 2 }}>
           {STORIES.map((data, i) => (
             <Grid item md={4} sm={6} xs={12} key={i}>
               <Link

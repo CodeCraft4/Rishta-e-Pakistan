@@ -1,17 +1,21 @@
 "use client"
 import React from "react";
-import { Box, Grid, Container, Typography, Stack, Pagination } from "@mui/material";
+import { Box, Grid, Container, Typography, Stack, Pagination, Button } from "@mui/material";
 import { FEATURED_PROFILE } from "@/constant/content";
 import Image from "next/image";
 import Search from '../SearchMember/Search'
 import { COLORS } from "@/constant/color";
-import BasicModal from "../Modal/UserModal";
+import UserInfoModal from "../Modal/UserModal";
 
 
 
 const UserShowOnPage = 3;
 
 const FPMember = () => {
+
+  const [userId,setUserId]= React.useState()
+  const [modal, setModal]= React.useState(false)
+
   const [user, setUser] = React.useState(1);
   const handleChange = (e: any, data: any) => {
     setUser(data);
@@ -87,8 +91,24 @@ const FPMember = () => {
                   <Typography >
                     <b style={{color:COLORS.blueLight.main}}>About:</b>
                     {data?.about} 
+                    <Button
+                     onClick={()=>{
+                      setUserId(data.id)
+                      setModal(!modal)
+                     }}
+                    >
+                      More...
+                    </Button>
+                    {modal && data.id === userId && (
+                      <UserInfoModal
+                       userInformation = {data}
+                       userInfoModal = {modal}
+                       CloseModal = {()=>{
+                        setModal(false)
+                       }}
+                      />
+                    )}
                     </Typography>
-                    <BasicModal/>
                   </Box>
                 </Box>
               </Box>
