@@ -13,7 +13,7 @@ const SignUpForm = () => {
             textAlign:'center',
             borderRadius:"8px",
             p:4,
-            width:"70%"
+            width:"30%"
          }}
          >
             <form>

@@ -7,13 +7,13 @@ const Loginform = () => {
   return (
     <div>
         <Container
-         maxWidth="md"
+         maxWidth="sm"
          sx={{
             bgcolor:"white",
             textAlign:'center',
             borderRadius:"8px",
             p:4,
-            width:"80%"
+            width:"30%"
          }}
          >
             <form>
