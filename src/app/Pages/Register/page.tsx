@@ -1,10 +1,10 @@
 import React from 'react'
-import { Typography } from '@mui/material'
+import SignUpContainer from './container/SignUpContainer'
 
 const Register = () => {
   return (
     <div>
-      <Typography>Register page is .....</Typography>
+      <SignUpContainer/>
     </div>
   )
 }

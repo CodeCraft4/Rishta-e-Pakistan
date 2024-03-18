@@ -4,6 +4,7 @@ import "./globals.css";
 import DrawerAppBar from "@/components/Navbar/NavBar";
 import Footer from '../components/Footer/footer';
 
+
 const inter = Mulish({
   weight:"500",
   subsets: ["latin"] 

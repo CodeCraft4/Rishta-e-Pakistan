@@ -289,7 +289,6 @@ export default function DrawerAppBar() {
             <List className={styles.dropdown}>
               <Typography>
                 <AccountCircleOutlined
-                  fontSize="large"
                   sx={{ color: "white" }}
                 />
               </Typography>
