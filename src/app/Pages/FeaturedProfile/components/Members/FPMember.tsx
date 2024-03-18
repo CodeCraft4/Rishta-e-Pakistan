@@ -11,6 +11,8 @@ import UserInfoModal from "../Modal/UserModal";
 
 const UserShowOnPage = 3;
 
+
+
 const FPMember = () => {
 
   const [userId,setUserId]= React.useState()
@@ -31,7 +33,7 @@ const FPMember = () => {
             <Search/>
           </Grid>
           <Grid item md={8} sm={8} xs={12} textAlign="center">
-            {FEATURED_PROFILE.slice(remainingMembers, members).map((data) => (
+            {FEATURED_PROFILE.slice(remainingMembers, members).map((data : any) => (
               <Box
                 key={data?.name}
                 sx={{
