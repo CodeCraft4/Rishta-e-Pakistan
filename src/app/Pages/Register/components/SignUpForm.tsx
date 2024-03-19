@@ -9,11 +9,12 @@ const SignUpForm = () => {
         <Container
          maxWidth="sm"
          sx={{
-            bgcolor:"white",
             textAlign:'center',
             borderRadius:"8px",
             p:4,
-            width:"30%"
+            width:"30%",
+            bgcolor:"rgba(75%,75%,75%,0.1)",
+            boxShadow:"inset 3px 5px 288px aqua"
          }}
          >
             <form>

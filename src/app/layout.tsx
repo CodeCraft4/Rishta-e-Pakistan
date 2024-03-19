@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import DrawerAppBar from "@/components/Navbar/NavBar";
 import Footer from '../components/Footer/footer';
+import Layout from "@/components/Layout/Layout";
 
 
 const inter = Mulish({
@@ -23,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <DrawerAppBar/>
+       <Layout>
         {children}
-        <Footer/>
+       </Layout>
       </body>
     </html>
   );

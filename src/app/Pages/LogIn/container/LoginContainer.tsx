@@ -13,7 +13,12 @@ const LoginContainer = () => {
         <Image
         src="https://images.pexels.com/photos/169186/pexels-photo-169186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         fill
-        alt="bgImage"/>
+        alt="bgImage"
+        style={{
+          filter:"brightness(40%)",
+          objectFit:"cover"
+        }}
+        />
         <Box
         sx={{
           position:"absolute",
