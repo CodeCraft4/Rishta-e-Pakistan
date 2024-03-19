@@ -45,7 +45,7 @@ export default function DrawerAppBar() {
   const pathname = usePathname();
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center",boxShadow:"inset 0px 0px 134px 8px #00695c",height:"100vh"}}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center",bgcolor:"rgba(50%,50%,50%,0.8)",height:"100vh"}}>
       <Typography variant="h6" sx={{ my: 2 }}>
         Rishta Pakistan
       </Typography>
@@ -55,7 +55,7 @@ export default function DrawerAppBar() {
           <Box
             sx={{
               "& a": {
-                color: pathname === "/Pages/Home" ? "red" : "white",
+                color: pathname === "/Pages/Home" ? "red" : "black",
                 textDecoration: pathname === "/Pages/Home" ? "underline": "none",
                 "&:hover": {
                   color: "red",

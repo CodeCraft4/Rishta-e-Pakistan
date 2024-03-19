@@ -12,9 +12,9 @@ const SignUpForm = () => {
             textAlign:'center',
             borderRadius:"8px",
             p:4,
-            width:"30%",
+            width:{md:"30%",sm:"50%",xs:"90%"},
             bgcolor:"rgba(75%,75%,75%,0.1)",
-            boxShadow:"inset 3px 5px 288px aqua"
+            boxShadow:"inset 3px 5px 288px black"
          }}
          >
             <form>
@@ -32,6 +32,7 @@ const SignUpForm = () => {
               fullWidth
               type="text"
               size="small"
+              color="warning"
               placeholder="Enter FullName"
               sx={{
                 mb:1,
@@ -41,6 +42,7 @@ const SignUpForm = () => {
              <TextField
               fullWidth
               type="email"
+              color="warning"
               size="small"
               placeholder="Enter E-mail"
               sx={{
@@ -51,6 +53,7 @@ const SignUpForm = () => {
              <TextField
               fullWidth
               type="password"
+              color="warning"
               size="small"
               placeholder="Enter Password"
               sx={{
@@ -60,6 +63,7 @@ const SignUpForm = () => {
              />
              <TextField
               fullWidth
+              color="warning"
               type="password"
               size="small"
               placeholder="Verify Password"
