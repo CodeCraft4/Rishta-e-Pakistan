@@ -8,10 +8,9 @@ const Layout = ({children}:any) => {
     const pathname = usePathname()
   return (
     <div>
-       {pathname == "/Pages/LogIn" ? null :<DrawerAppBar/> && pathname == "/Pages/Register" ? null : <DrawerAppBar/>}
-       {children}
-       {pathname == "/Pages/LogIn" ? null :<Footer/> && pathname == "/Pages/Register" ? null : <Footer/>}
-
+       {pathname === "/Pages/LogIn" ? undefined :<DrawerAppBar/>}
+         {children}
+    
     </div>
   )
 }

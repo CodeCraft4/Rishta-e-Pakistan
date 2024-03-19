@@ -12,9 +12,9 @@ const Loginform = () => {
            textAlign:'center',
            borderRadius:"5px",
            p:4,
-           width:"30%",
+           width:{md:"30%",sm:"50%",xs:"90%"},
            bgcolor:"rgba(75%,75%,75%,0.1)",
-            boxShadow:"inset 3px 5px 288px aqua"
+            boxShadow:"inset 3px 5px 288px black"
          }}
          >
             <form>
@@ -32,16 +32,17 @@ const Loginform = () => {
               fullWidth
               type="email"
               size="small"
+              color="warning"
               placeholder="Enter E-mail"
               sx={{
                 mb:1,
-
               }}
              />
              <TextField
               fullWidth
               type="password"
               size="small"
+              color="warning"
               placeholder="Enter Password"
               sx={{
                 mb:1,
