@@ -36,7 +36,8 @@ const SignUpForm = () => {
               placeholder="Enter FullName"
               sx={{
                 mb:1,
-
+                border:"1.5px solid white",
+                borderRadius:"3px"
               }}
              />
              <TextField
@@ -47,7 +48,8 @@ const SignUpForm = () => {
               placeholder="Enter E-mail"
               sx={{
                 mb:1,
-
+                border:"1.5px solid white",
+                borderRadius:"3px"
               }}
              />
              <TextField
@@ -58,7 +60,8 @@ const SignUpForm = () => {
               placeholder="Enter Password"
               sx={{
                 mb:1,
-
+                border:"1.5px solid white",
+                borderRadius:"3px"
               }}
              />
              <TextField
@@ -69,7 +72,8 @@ const SignUpForm = () => {
               placeholder="Verify Password"
               sx={{
                 mb:1,
-
+                border:"1.5px solid white",
+                borderRadius:"3px"
               }}
              />
              
