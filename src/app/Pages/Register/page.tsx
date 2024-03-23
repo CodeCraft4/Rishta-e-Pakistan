@@ -1,14 +1,12 @@
 import React from 'react'
 import SignUpContainer from './container/SignUpContainer'
-import Layout from '@/components/Layout/Layout'
+import RootLayouts from '@/app/Layout/page'
 
 
 const Register = () => {
   return (
     <div>
-      <Layout>
       <SignUpContainer/>
-      </Layout>
     </div>
   )
 }

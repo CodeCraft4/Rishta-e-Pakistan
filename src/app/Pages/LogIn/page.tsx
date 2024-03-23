@@ -1,13 +1,11 @@
 import React from 'react'
 import LoginContainer from './container/LoginContainer'
-import Layout from '@/components/Layout/Layout'
+import RootLayouts from '@/app/Layout/page'
 
 const LogIn = () => {
   return (
     <div>
-       <Layout>
       <LoginContainer/>
-       </Layout>
     </div>
   )
 }
